@@ -1,3 +1,4 @@
+
 a0=int(input('Ingresa la aproximación inicial: '))
 n=10
 A=20
