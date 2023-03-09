@@ -569,6 +569,9 @@ tr:nth-child(odd) {
   background-color: rgb(196, 231, 255);
 }
 
+ol {
+  column-count: 2;
+}
 /*//// Listas//////*/
 /*
 ol {
