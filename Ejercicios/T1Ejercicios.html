@@ -102,13 +102,13 @@
 
     <div class="ejercicio-box"> <h2 class="number-title"> Ejercicio </h2>
       <p>Encuentra una fórmula para el $n$-ésimo término de cada una de las siguientes sucesiones: </p>
-      <ol>
+      <ol class="two-column">
         <li>$\displaystyle{-2, 4, -6,8, \ldots }$</li><br>
         <li>$\displaystyle{\frac{1}{1}, \frac{-1}{8}, \frac{1}{27}, \frac{-1}{64}, \ldots }$</li><br>
         <li>$\displaystyle{\frac{2}{6}, \frac{3}{7}, \frac{4}{8}, \ldots }$</li><br>
         <li>$\displaystyle{\frac{1}{4}, \frac{2}{5}, \frac{1}{2},\frac{4}{7}, \frac{5}{8}, \frac{2}{3}, \frac{7}{10} \ldots }$</li><br>
         <li>$\displaystyle{1,1,\frac{3}{4}, \frac{1}{2}, \frac{5}{16}, \frac{3}{16},\frac{7}{64}, \frac{1}{16}, \frac{9}{256} \ldots }$</li><br>
-
+      </ol>
     </div>
 
     <div class="ejercicio-box"> <h2 class="number-title"> Ejercicio </h2>
@@ -163,7 +163,7 @@
         en caso de que sean convergentes establece el límite $L$ y prueba detalladamente que en efecto
         $\displaystyle{\lim_{n\to \infty}a_{n}}=L$. Justifica claramente tus respuestas</p>
   
-      <ol>
+      <ol class="two-column">
         <li>$\displaystyle{\left( 12 \right)_{n=1}^{\infty}}$</li><br>
         <li>$\displaystyle{\left( n+5 \right)_{n=1}^{\infty}}$</li><br>
         <li>$\displaystyle{\left( \frac{1}{n+2} \right)_{n=1}^{\infty}}$</li><br>
@@ -204,81 +204,42 @@
       </p>
     </div>
 
+    <div class="ejercicio-box"> <h2 class="number-title"> Ejercicio </h2>
+    <p>Sea $\left( a_{n}\right)_{n\geq 1}$  es una sucesión de números enteros i.e. $a_{n} \in \mathbb{Z}$ para todo 
+      $n\in \mathbb{N}$. Si $(a_{n})_{n\in \mathbb{N}}$ es convergente con $\displaystyle{\lim_{n\to \infty}} a_{n}=L$, 
+      utiliza la definición de sucesión convergente para probar que existe $N\in \mathbb{N}$ tal que $a_{n}=L$
+       para todo $n \geq N$.</p>
+    </p>
+    </div>
 
+    <div class="ejercicio-box">
+      <h2 class="number-title" id="Ejer:PropiedadesLimitesSucesiones"> Ejercicio </h2>
+      <p>  Da un ejemplo de dos sucesiones de números reales $(a_n)_{n=1}^\infty$ y $(b_n)_{n=1}^\infty$ convergentes, tales que 
+        $a_n < b_n$ para toda $n\in \mathbb{N}$ y sin embargo  $$\lim_{n\to \infty} a_n = \lim_{n\to \infty} b_n.$$
+      </p>
+    </div>
 
-    <!-- <p>Sea $\left( a_{n}\right)_{n\geq 1}$       es una sucesión de números enteros i.e. $a_{n} \in \mathbb{N}$ para todo $n\in \mathbb{N}$ Utiliza la definición sucesión convergente para probar que 
-      tal que $\displaystyle{\lim_{n\to \infty}} a_{n}=L$, then there exists a number M such that
-      an = L for all n ≥ M</p> -->
-<!--
-<div class="ejercicio-box">
-  <h2 class="number-title" id="Ejer:PropiedadesLimitesSucesiones"> Ejercicio </h2>
-  <p>
-  Sean  $(a_n)_{n=1}^\infty, (b_n)_{n=1}^\infty$, dos sucesiones convergentes. Prueba cada una de las 
-  siguientes proposiciones:
-  </p>
-  <p>
-  
-  </p>
-<ol>
-<li>$\displaystyle{\lim_{n\to \infty}(a_n+b_n)=\lim_{n\to \infty}a_n + \lim_{n\to \infty}b_n}$.
-</li><br>
+    <div class="ejercicio-box">  <h2 class="number-title"> Ejercicio </h2>
+      <p>Sea $(a_n)_{n=1}^\infty$ una sucesión en $\mathbb{R}$. Prueba que si $(a_n)_{n=1}^\infty$ es monótona decreciente  
+        y acotada inferiormente, entonces la sucesión $(a_n)_{n=1}^\infty$ es  convergente.
+      </p>
+    </div>
 
-<li>Para \(\alpha\in \mathbb{R}\), fija y arbitraria, se satisface
-  $\displaystyle{\lim_{n\to \infty} (\alpha a_n)=\alpha \lim_{n\to \infty}a_n}$.
-</li><br>
-<li>
-  <p>Supongamos que para toda $n\in \mathbb{N}$, $a_n \leq b_n$. Prueba que 
-    $$\displaystyle{\lim_{n\to \infty}a_n \leq \lim_{n\to \infty}b_n}.$$
-  </p>
-  <p>
-  Da un ejemplo donde  $a_n < b_n$ para toda $n\in \mathbb{N}$ y sin embargo 
-          $$\lim_{n\to \infty} a_n = \lim_{n\to \infty} b_n.$$
-  
+    <div class="ejercicio-box">  <h2 class="number-title"> Ejercicio </h2>
+      <p>Sea $(a_n)_{n=1}^\infty$ una sucesión de números reales convergente con $\displaystyle{\lim_{n\to \infty} a_{n}} = L$. 
+        Prueba que:
+        <ul>
+          <li>Si $L>0$, entonces existe $N\in \mathbb{N}$ tal que a_{n} >0 para toda $n\geq N$</li><br>
+          <li>Si $L < 0$, entonces existe $N\in \mathbb{N}$ tal que a_{n} < 0 para toda $n\geq N$</li><br>
+          <li>Si $L\not= 0$, entonces existe $N\in \mathbb{N}$ tal que $a_{n} \not= 0$ para toda $n\geq N$</li>
+        </ul> 
+      </p>
+    </div>
 
-  </p>
-</li>
-</ol>
-</div>
-
-<div class="ejercicio-box">
-  <h2 class="number-title"> Ejercicio </h2>
-  <p>
-  Considera la sucesión $(a_n)_{n=1}^\infty$ dada por $a_n=(-1)^n$. 
-  Demuestra que $(a_n)_{n=1}^\infty$ no es convergente.
-  </p>
-
-  <p>
-  <b>Sugerencia:</b> Procede por contradición.
-  </p>
-</div>
-
-
-<div class="ejercicio-box">
-  <h2 class="number-title"> Ejercicio </h2>
-  <p>
-  Decimos que una sucesión \((a_n)_{n=1}^\infty\) está acotada,
-  si existe \(M>0\) tal que \(|a_n| \leq M\), para toda
-  \(n\in \mathbb{N}\).
-  </p>
-<ol>
-<li>Demuestra que si \((a_n)_{n=1}^\infty\) es una sucesión convergente entonces también
-  está acotada.
-</li><br>
-<li>Da un ejemplo de una sucesión que esté acotada pero que no sea convergente.
-</li>
-</ol>
-
-<button class="respButton hvr-grow "> Demostración </button>
-            <div class="resp-box flexbox">
-              <div class="video flexbox">
-                <a href="https://youtu.be/vH-sjG_DbGQ" target="_blank" > Video </a>
-              </div>
-            </div>
-</div>
 
     <div class="ejercicio-box"> <h2 class="number-title"> Ejercicio</h2>
     <p>
-      Determine si las siguientes sucesiones convergen o divergen. En caso de ser convergentes establece el límite. Justifica claramente tus rspuestas.
+     
     </p>           
     </div>
 
