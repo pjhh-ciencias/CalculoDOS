@@ -102,18 +102,18 @@
 
     <div class="ejercicio-box"> <h2 class="number-title"> Ejercicio </h2>
       <p>Encuentra una fórmula para el $n$-ésimo término de cada una de las siguientes sucesiones: </p>
-      <ol>
+      <ol class="two-column">
         <li>$\displaystyle{-2, 4, -6,8, \ldots }$</li><br>
         <li>$\displaystyle{\frac{1}{1}, \frac{-1}{8}, \frac{1}{27}, \frac{-1}{64}, \ldots }$</li><br>
         <li>$\displaystyle{\frac{2}{6}, \frac{3}{7}, \frac{4}{8}, \ldots }$</li><br>
         <li>$\displaystyle{\frac{1}{4}, \frac{2}{5}, \frac{1}{2},\frac{4}{7}, \frac{5}{8}, \frac{2}{3}, \frac{7}{10} \ldots }$</li><br>
         <li>$\displaystyle{1,1,\frac{3}{4}, \frac{1}{2}, \frac{5}{16}, \frac{3}{16},\frac{7}{64}, \frac{1}{16}, \frac{9}{256} \ldots }$</li><br>
-
+      </ol>
     </div>
 
     <div class="ejercicio-box"> <h2 class="number-title"> Ejercicio </h2>
       <p>Determine cuales de las siguientes sucesiones convergen o cero. Justifica clara y detallamente tus respuestas</p>
-      <ol>
+      <ol class="three-column">
         <li>$\displaystyle{\left( 2^{n} \right)_{n=1}^{\infty}}$</li><br>
         <li>$\displaystyle{\left( \frac{-1}{2^{n}} \right)_{n=1}^{\infty}}$</li><br>
         <li>$\displaystyle{\left( \frac{n^{2}}{n^{2} + 1} \right)_{n=1}^{\infty}}$</li><br>
@@ -131,7 +131,7 @@
           $\displaystyle{\lim_{n\to \infty } a_{n}} =1$.
         </li>
       <li><p>Luego, encuentra  $N \in \mathbb{N}$ tal que:</p>
-        <ol>
+        <ol class="two-column">
           <li>$|a_{n} - 1| < 0.0001$ para todo $n\geq N$</li><br>
           <li>$|a_{n} - 1| < 0.00001$ para todo $n\geq N$</li><br>
         </ol>
@@ -148,7 +148,7 @@
           $\displaystyle{\lim_{n\to \infty } b_{n}} =0$ 
         </li>
         <li><p>Luego, encuentra  $N \in \mathbb{N}$ tal que:</p>
-        <ol>
+        <ol class="two-column">
           <li>$|b_{n}| < 10^{-2}$ para todo $n\geq N$</li><br>
           <li>$|b_{n}| < 10^{-5}$ para todo $n\geq N$</li><br>
         </ol>
@@ -163,7 +163,7 @@
         en caso de que sean convergentes establece el límite $L$ y prueba detalladamente que en efecto
         $\displaystyle{\lim_{n\to \infty}a_{n}}=L$. Justifica claramente tus respuestas</p>
   
-      <ol>
+      <ol class="two-column">
         <li>$\displaystyle{\left( 12 \right)_{n=1}^{\infty}}$</li><br>
         <li>$\displaystyle{\left( n+5 \right)_{n=1}^{\infty}}$</li><br>
         <li>$\displaystyle{\left( \frac{1}{n+2} \right)_{n=1}^{\infty}}$</li><br>
@@ -205,24 +205,99 @@
     </div>
 
     <div class="ejercicio-box"> <h2 class="number-title"> Ejercicio </h2>
-    <p>
-      Supongamos que la sucesión \((a_n)_{n=1}^\infty\) es convergente con \(L=\lim_{n\to \infty}a_n\).
+    <p>Sea $\left( a_{n}\right)_{n\geq 1}$  es una sucesión de números enteros i.e. $a_{n} \in \mathbb{Z}$ para todo 
+      $n\in \mathbb{N}$. Si $(a_{n})_{n\in \mathbb{N}}$ es convergente con $\displaystyle{\lim_{n\to \infty}} a_{n}=L$, 
+      utiliza la definición de sucesión convergente para probar que existe $N\in \mathbb{N}$ tal que $a_{n}=L$
+       para todo $n \geq N$.</p>
     </p>
-    
-    <ol>
-    <li>Demuestra que
-      $$ L=\lim_{n\to \infty} a_{n+1}.$$
-    </li>
-    <li>Más en general, toma \(p\in \mathbb{N}\) fijo y define una nueva sucesión
-      \(b_n:=a_{n+p}\). Demuestra que la sucesión \((b_n)_{n=1}^\infty\) converge si
-      y sólo si \((a_n)_{n=1}^\infty\) converge y que ambas tienen el mismo límite.
-    </li>
-    </ol>
     </div>
 
+    <div class="ejercicio-box">
+      <h2 class="number-title" id="Ejer:PropiedadesLimitesSucesiones"> Ejercicio </h2>
+      <p>  Da un ejemplo de dos sucesiones de números reales $(a_n)_{n=1}^\infty$ y $(b_n)_{n=1}^\infty$ convergentes, tales que 
+        $a_n < b_n$ para toda $n\in \mathbb{N}$ y sin embargo  $$\lim_{n\to \infty} a_n = \lim_{n\to \infty} b_n.$$
+      </p>
+    </div>
+
+    <div class="ejercicio-box">  <h2 class="number-title"> Ejercicio </h2>
+      <p>Sea $(a_n)_{n=1}^\infty$ una sucesión en $\mathbb{R}$. Prueba que si $(a_n)_{n=1}^\infty$ es monótona decreciente  
+        y acotada inferiormente, entonces la sucesión $(a_n)_{n=1}^\infty$ es  convergente.
+      </p>
+
+      
+      <p><b>Hint:</b> La sucesion converge a $\beta:=\inf\{ a_{n} \colon n \in \mathbb{N} \}$. Justifica adecuadamente porque existe 
+        $\beta$ </p>
+      </div>
+
+    <div class="ejercicio-box">  <h2 class="number-title"> Ejercicio </h2>
+      <p>Sea $(a_n)_{n=1}^\infty$ una sucesión de números reales convergente con $\displaystyle{\lim_{n\to \infty} a_{n}} = L$. 
+        Prueba que:
+        <ol>
+          <li>Si $L>0$, entonces existe $N\in \mathbb{N}$ tal que a_{n} >0 para toda $n\geq N$</li><br>
+          <li>Si $L < 0$, entonces existe $N\in \mathbb{N}$ tal que a_{n} < 0 para toda $n\geq N$</li><br>
+          <li>Si $L\not= 0$, entonces existe $N\in \mathbb{N}$ tal que $a_{n} \not= 0$ para toda $n\geq N$</li>
+        </ul> 
+      </p>
+    </div>
+
+
+    <div class="ejercicio-box"> <h2 class="number-title"> Ejercicio</h2>
+    <p>Sea $(a_n)_{n=1}^\infty$ una sucesión de números reales. Prueba que $\left( a_{n}\right)_{n\geq 1}$  converge a $0$
+      si y sólo si  la sucesión  $\left(|a_{n}|\right)_{n\geq 1}$ converge a $0$.
+    </p>           
+    </div>
+
+    <div class="ejercicio-box"> <h2 class="number-title"> Ejercicio</h2>
+      <p>
+        <ol>
+          <li>Sea $(a_n)_{n=1}^\infty$ una sucesión de números reales. Prueba que $\left( a_{n}\right)_{n\geq 1}$  converge a $a$
+            entonces la sucesión  $\left(|a_{n}|\right)_{n\geq 1}$ converge a $|a|$.
+          </li><br>
+          <li> ¿Es verdad que si la sucesión $\left(|a_{n}|\right)_{n\geq 1}$ converge, entonces la sucesión 
+            $\left(a_{n}\right)_{n\geq 1}$ también converge? Prueba o da un contraejemplo.
+          </li>
+      </p>           
+      </div>
+
+    <div class="ejercicio-box"> <h2 class="number-title"> Ejercicio</h2>
+    <p>Demuestra que la sucesion $\displaystyle{ \left(\frac{(−1)^n}{n}\right)_{n=1}^{\infty}}$ converge a cero.</p>
+    </div>
+
+    <div class="ejercicio-box"> <h2 class="number-title"> Ejercicio</h2>
+      <p>Sea $c\in \mathbb{R}$ tal que $|c|>1$. Demuestra que la sucesion $(c^{n})_{n\in \mathbb{N}}$ no es una sucesión convergente.</p>
+    </div>
+
+    <div class="ejercicio-box"> <h2 class="number-title"> Ejercicio</h2>
+    <p>Sean $(a_n)_{n=1}^\infty$ y $(b_n)_{n=1}^\infty$ sucesiones de números reales tales que $(a_n)_{n=1}^\infty$ es convergente con 
+      $\displaystyle{\lim_{n\to \infty}} a_{n}=0$ y $(b_n)_{n=1}^\infty$ es acotada. Prueba que la sucesión $(a_n\cdot b_n)_{n=1}^{\infty}$ converge a $0$
+    </p>
+    </div>
+  
+    <div class="ejercicio-box"> <h2 class="number-title"> Ejercicio</h2>
+      <p>Sea $A \subset \mathbb{R}$ tal que $A\not= \emptyset$ y $A$ acotado superiormente. Prueba que si $\alpha = \sup(A)$,  
+        entonces existe una sucesión $(a_{n})_{n=1}^{\infty}$  de números en $A$ i.e. $a_{n} \in A$ para todo $n\in \mathbb{N}$ 
+        tal que $(a_{n})_{n=1}^{\infty}$ converge a $\alpha$
+      </p>
+      </div>
+
+      <div class="ejercicio-box"> <h2 class="number-title"> Ejercicio</h2>
+      <p>
+        Sean \(a,b,c \in \mathbb{R}\) tales que \(a< b< c\). Demuestra que para todo \(L\in \mathbb{R}\) se satisface:
+      \[
+      |b-L| \leq |a-L|+|c-L|.
+      \]
+      </p>
+      <p><b>Sugerencia:</b> Considera los casos \(L\leq a\),
+        \(a< L < c \) y \(c \leq L\) junto con la desigualdad del triángulo.
+      </p>
+
+      <!-- 
+      <button class="respButton hvr-grow "> Demostración </button>
+      <div class="resp-box flexbox">
+        <div class="video flexbox">
+          <a href="https://youtu.be/pcmgRNyOOtw" target="_blank" > Video </a>
+        </div>
+      </div> -->
     
-    <div class="ejercicio-box"> <h2 class="number-title"> Ejercicio </h2>
-      <p><b>Desigualdad de Bernoulli</b></p>
-      <p>Utiliza inducción matemática para probar que si $x>-1$, entonces para todo  $n\in \mathbb{N}$ se satisface: 
-        $$(1+nx)\leq (1+x)^{n}.$$</p>
+      </div>
 </body>

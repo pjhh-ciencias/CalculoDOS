@@ -569,9 +569,17 @@ tr:nth-child(odd) {
   background-color: rgb(196, 231, 255);
 }
 
-ol {
-  column-count: 1;
+.three-column{
+  columns: 3;
+  /*grid-template-columns: repeat(2, 1fr);*/
 }
+
+.two-column{
+  columns: 1;
+  /*grid-template-columns: repeat(2, 1fr);*/
+}
+
+
 /*//// Listas//////*/
 /*
 ol {
