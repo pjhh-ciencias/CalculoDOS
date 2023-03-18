@@ -570,7 +570,7 @@ tr:nth-child(odd) {
 }
 
 ol {
-  column-count: 2;
+  column-count: 1;
 }
 /*//// Listas//////*/
 /*
