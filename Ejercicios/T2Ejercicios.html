@@ -198,15 +198,15 @@
       </p>
       <ol>
           <li> Prueba que \(\chi_A(x)=\chi_B(x)\), para toda \(x\in \mathbb{R}\)  si y sólo si \(A=B\).
-          </li>
+          </li><br>
           <li> Si $A\cap B = \emptyset$ entonces la función característica de la unión es 
               la suma de las funciones características, i.e. 
               $$\chi_A(x)+\chi_B(x)=\chi_{A\cup B}(x),$$ para toda \(x\in \mathbb{R}\).
-          </li>
+          </li><br>
           <li> Prueba que la función característica de la intersección es 
               el producto de las funciones características, i.e. 
               $$\chi_{A\cap B}(x)=(\chi_A\chi_B)(x)=\chi_A(x)\chi_B(x),$$ para toda \(x\in \mathbb{R}\)..
-          </li>
+          </li><br>
           <li> La diferencia simétrica de dos conjuntos se define como 
               \(A\triangle B=(A\setminus B) \cup (B\setminus A)\). Prueba que 
               \[
@@ -285,6 +285,114 @@
         </p>
         </div>
 
+                
+        <div class="ejercicio-box"> 
+          <h2 class="number-title"> Ejercicio</h2> 
+          <p>
+              Demuestra que para todo número natural $n$ se verifica que:
+
+              $$\int_0^{n^2} \lfloor \sqrt{t} \rfloor dt=n(n-1)(4n+1)/6.$$
+          </p>
+          <!-- <button class="respButton hvr-grow "> Demostración  </button>
+          <div class="resp-box flexbox">
+            <div class="flexbox">
+              <a href="https://youtu.be/QNGlSYgcSBU" target="_blank" > Video </a>
+            </div>
+          </div>  -->
+        </div>
+                
+                
+        <div class="ejercicio-box"><h2 class="number-title" id="Ejer:LemaAditividadIntervalosEscalonadas"> Ejercicio</h2> 
+          <p>Sea $s:[a,b] \to \mathbb{R}$ una función escalonada y $c\in (a,b)$. Demuestra:
+            $$ \int_a^b s(x) dx = \int_a^c s(x) dx + \int_c^b s(x) dx $$
+          </p>
+        </div>
+
+                
+        <div class="ejercicio-box"> 
+          <h2 class="number-title" > Ejercicio</h2> 
+          <p> Supongamos que $s, \tilde{s}:[a,b] \to \mathbb{R}$ son funciones escalonadas 
+              y que $s = \tilde{s}$, excepto en un número finito de puntos. Prueba que
+              
+              $$\displaystyle{\int_{a}^{b} s(x) dx=\int_{a}^{b}\tilde{s}(x) dx}$$.
+          </p>
+          <p><b>Sugerencia:</b> Usar el <a href="#Ejer:LemaAditividadIntervalosEscalonadas"> Ejercicio 2.7 </a> 
+              e inducción sobre el número de puntos donde son distintos.
+          </p>
+        </div>
+
+                
+        <div class="ejercicio-box"> <h2 class="number-title" id="Ejer:LinealidadMultiplesIntervalos"> Ejercicio</h2>
+          <p>
+              Sea $s:[a,b]\to \mathbb{R}$ una función escalonada. 
+              Si $Q=\{y_j \}_{j=0}^m$ es una partición arbitraria de $[a,b]$, 
+              demuestra:
+              $$
+              \int_a^b s(x)dx =\sum_{j=1}^m \int_{y_{j-1}}^{y_j}s(x)dx.
+              $$
+          </p>
+          <p> <b>Sugerencia</b>: usa inducción sobre la longitud de la partición 
+              y el ejercicio  <a href="#Ejer:LemaAditividadIntervalosEscalonadas">Ejercicio 2.7.</a>
+          </p>
+        </div>
+
+
+                
+        <div class="ejercicio-box"> 
+          <h2 class="number-title"> Ejercicio</h2> 
+          <p>
+              Dibuja la gráfica de la  función 
+              $f(x)=\lfloor 2x  \rfloor + \lfloor 3x \rfloor$, $0\leq x \leq 2$ 
+              y escribe a $f$ de la forma
+              $$
+              f(x)=\sum_{i=1}^n \alpha_i \chi_{[x_{i-1}, x_i)}
+              $$
+              donde $\{x_i\}_{i=0}^n$ es una partición de $[0,2]$.
+          </p>
+        </div>
+
+              
+      <div class="ejercicio-box"> 
+        <h2 class="number-title" id="Ejer:LemaUnionParticionesEscalonadas"> Ejercicio</h2> 
+        <p>
+            Sean $s,t:[a,b]\to \mathbb{R}$ dos funciones escalonadas. Por $P_s$ y $P_t$ denotamos 
+            las particiones asociadas a  $s$ y $t$, respectivamente. 
+            Denota $Q=P_t\vee P_s=\{ z_k\}_{k=0}^p$. Demuestra que, para todo $k=1,\dots, p$, 
+            $s$ es constante en $(z_{k-1}, z_k)$ y t es constante en $(z_{k-1}, z_k)$.
+        </p>
+        <!-- <button class="respButton hvr-grow "> Demostración  </button>
+        <div class="resp-box flexbox">
+          <div class="flexbox">
+            <a href="https://youtu.be/fjhj_WxcVg8" target="_blank" > Video </a>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="ejercicio-box">
+        <h2 class="number-title" id="Ejer:MonotoniaIntegralEscalonadas"> Ejercicio</h2>   
+       <p>Sean $s,t : [a,b]\to \mathbb{R}$ dos funciones escalondas con $s(x)\leq t(x)$
+          para todo \(x\in [a,b]\), excepto una cantidad finita de puntos. Demuestra que 
+          $$\int_a^b s(x)dx\leq \int_a^b t(x)dx.$$
+       </p> 
+      </div>
+
+
+            
+      <div class="ejercicio-box"> 
+        <h2 class="number-title" id="Ejer:EscalonadasEspacioVectorial"> Ejercicio</h2> 
+            <p>
+                Sean $s,t:[a,b]\to \mathbb{R}$ dos funciones escalonadas. Demuestra:
+            </p>
+
+        <ol>
+            <li>La función suma, $s+t$, es otra vez una función escalonada.</li><br>
+            <li>Si $\alpha$ es una constante, la función $\alpha s$, es otra vez  
+                una función escalonada.<br></li> 
+        </ol>
+        <p><b>Sugerencia:</b> usa el <a href="#Ejer:LemaUnionParticionesEscalonadas">Ejercicio 2.12.</a> 
+        </p>
+
+      </div>
 
 
 </body>
