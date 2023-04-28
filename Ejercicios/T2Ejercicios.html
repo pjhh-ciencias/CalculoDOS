@@ -525,18 +525,20 @@
         <ol>
             <li>
                 Prueba que existen funciones escalonadas \(s_n,t_n:[0,b]\to \mathbb{R}\)
-                tales que
-                \begin{eqnarray*}
-                    s_n(x)\leq f(x)\leq t_n(x), \forall x\in [0,b],\\
-                    \int_0^b t_n(x)dx - \int_0^b s_n(x)dx  \leq \frac{b^3}{n},\\
-                    \int_0^b s_n(x)dx \leq \frac{b^3}{3} \leq \int_0^b t_n(x)dx
-                \end{eqnarray*}
+                tales que:
+                <p>
+                  <ul>
+                      <li>$\displaystyle{s_n(x)\leq f(x)\leq t_n(x), \forall x\in [0,b]}$,</li><br>
+                      <li>$\displaystyle{\int_0^b t_n(x)dx - \int_0^b s_n(x)dx  \leq \frac{b^3}{n}}$,</li><br>
+                      <li>$\displaystyle{\int_0^b s_n(x)dx \leq \frac{b^3}{3} \leq \int_0^b t_n(x)dx}$ </li>
+                  </ul>
+                </p>
             </li><br>
             <li>
                 Usa el criterio de Cauchy para concluir que \(f\) es integrable en \([a,b]\).
             </li><br>
             <li>
-                Ya que sabemos que \(f\) es integrable podemos tomar \(\int_0^bfdx\) y usar 
+                Ya que sabemos que \(f\) es integrable podemos tomar \(\displaystyle{\int_0^bfdx}\) y usar 
                 monotonía para obtener 
                 \[
                     \int_0^b s_n(x)dx \leq \int_0^b f(x)dx \leq \int_0^b t_n(x)dx 
