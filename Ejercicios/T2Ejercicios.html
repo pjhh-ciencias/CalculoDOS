@@ -14,8 +14,6 @@
     <script type="text/javascript" src="../main.js"></script>
 
 
-
-
     <!-- Next part is for new coomands -->
     <script>
       window.MathJax = {
@@ -24,7 +22,8 @@
             sen: "\\operatorname{sen}",
             seg: ["\\overrightarrow{#1}", 1]
           },
-          tags: "ams" /* this part is for numbered equations */
+          tags: "ams", /* this part is for numbered equations */
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
         }
       };
     </script>
@@ -502,8 +501,7 @@
       </div>
 
             
-      <div class="ejercicio-box"> 
-        <h2 class="number-title"> Ejercicio</h2>  
+      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>  
         <p>Sea $s:[a,b]\to \mathbb{R}$ una función escalonada y $f:[c,d] \to \mathbb{R}$ una función 
           arbitraria pero fija.
         </p>
@@ -513,6 +511,135 @@
           <li> Da un ejemplo que muestre que no siempre la composición $s\circ f$ es una función escalonada.</li><br< 
           </ol>
       </div>
+
+      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>  
+        <p>Supongamos que las funciones $f(x) := \sqrt{1+x^2}$ y $g(x) := \sqrt{1+x}$  es una funcion Riemann integrable en $[0,1]$. Prueba que se satisface la siguiente desigualdad:
+        $$\int_0^1\sqrt{1+x^2}dx\leq \int_0^1 \sqrt{1+x}dx.$$
+      </div>
+
+        
+      <div class="ejercicio-box">
+        <h2 class="number-title"> Ejercicio</h2>
+        <p>
+            Considera la parábola \(f:[0,b]\to \mathbb{R}\), \(f(x)=x^2\) ,donde \(b>0\).
+        </p>
+        <ol>
+            <li>
+                Prueba que existen funciones escalonadas \(s_n,t_n:[0,b]\to \mathbb{R}\)
+                tales que
+                \begin{eqnarray*}
+                    s_n(x)\leq f(x)\leq t_n(x), \forall x\in [0,b],\\
+                    \int_0^b t_n(x)dx - \int_0^b s_n(x)dx  \leq \frac{b^3}{n},\\
+                    \int_0^b s_n(x)dx \leq \frac{b^3}{3} \leq \int_0^b t_n(x)dx
+                \end{eqnarray*}
+            </li><br>
+            <li>
+                Usa el criterio de Cauchy para concluir que \(f\) es integrable en \([a,b]\).
+            </li><br>
+            <li>
+                Ya que sabemos que \(f\) es integrable podemos tomar \(\int_0^bfdx\) y usar 
+                monotonía para obtener 
+                \[
+                    \int_0^b s_n(x)dx \leq \int_0^b f(x)dx \leq \int_0^b t_n(x)dx 
+                \]
+                Usa las desigualdades del inciso 1 para concluir
+                \[
+                    \int_0^b x^2 dx =\frac{b^3}{3}
+                \]
+            </li><br>
+        </ol>
+        <p>
+            Nota: de manera similar y utilizando el <a href="./T2Ejercicios.html#Ejer:SumasSupInfCubica">Ejercicio 2.7</a> 
+            se puede probar 
+            \[
+                \int_0^b x^3dx =\frac{b^4}{4}.
+            \]
+        </p>
+      <!--
+        <button class="respButton hvr-grow "> Demostración  </button>
+          <div class="resp-box flexbox">
+            <div class="flexbox">
+              <a href="https://youtu.be/qHy2XeG2Dqw" target="_blank" > Video </a>
+            </div>
+          </div>
+      -->
+    </div>
+
+      <div class="ejercicio-box">
+        <h2 class="number-title" id="Ejer:SacaEscalares"> Ejercicio</h2> 
+    
+        <p>Sea $f:[a,b] \to \mathbb{R}$ integrable y $\alpha\in \mathbb{R}$, un escalar fijo y arbitrario. Entonces la función \(\alpha f\colon \to \mathbb{R}\) es integrable y 
+            \[
+              \int_a^b \alpha f(x)dx=\alpha\int_a^bf(x)dx
+            \]
+        </p>
+        <p>Si $\alpha =0$ no hay mucho que hacer. Supongamos que $\alpha \not= 0$.</p>
+        <p> Fija $\varepsilon >0$. 
+        </p>
+        <ol>
+            <li>
+                Demuestra que existen funciones escalonadas $s_f,t_f :[a,b] \to \mathbb{R}$ tales que
+                $s_f \leq f \leq t_f$ y tal que
+                $$
+                \int_a^b t_f(x)dx -\int_a^bs_f(x)dx < \frac{\varepsilon}{|\alpha|}.
+                $$
+            </li><br>
+        
+            <li>Si $\alpha >0$ define $s:=\alpha s_f$, $t:=\alpha t_f$; si $\alpha < 0$ define 
+                $s=\alpha t_f$, $t=\alpha s_f$. 
+                Demuestra que $s$ y $t$ son funciones escalonadas, que $s\leq \alpha f \leq t$ y que
+                \begin{equation}\label{Eqn:SacaEscalares1}
+                \int_a^b t(x)dx -\int_a^b s(x)dx  < \varepsilon.
+                \end{equation}
+            </li><br>
+            <li>
+                Usa el inciso anterior y el criterio de Cauchy 
+                para concluir que la función 
+                $\alpha f$ es integrable.
+            </li><br>
+        
+            <li>
+                Usando la monotonía de la integral demuestra que:
+                \begin{equation}\label{Eqn:SacaEscalares2}
+                \int_a^b s(x)dx \leq \int_a^b \alpha f(x)dx \leq \int_a^b t(x)dx.
+                \end{equation}
+            </li><br>
+        
+            <li>
+                Recuerda que, por definición de $t_f$ y $s_f$:
+                $$
+                \int_a^b s_f(x)dx \leq \int_a^b f(x)dx \leq \int_a^b t_f(x)dx.
+                $$
+                Multiplica las desigualdades anteriores por $\alpha$  y usa la linealidad de la 
+                integral de las
+                funciones escalonadas para demostrar que:
+        
+                \begin{equation}\label{Eqn:SacaEscalares3}
+                \int_a^b s(x)dx \leq \alpha \int_a^b f(x)dx \leq \int_a^b t(x)dx
+                \end{equation}
+            </li><br>
+
+            <li>
+                Usando \eqref{Eqn:SacaEscalares1}, \eqref{Eqn:SacaEscalares2} y 
+                \eqref{Eqn:SacaEscalares3} demuestra que
+                $$
+                \left| \alpha \int_a^b f(x)dx -\int_a^b \alpha f(x)dx \right| <\varepsilon.
+                $$
+            </li><br>
+
+            <li>
+                Ya que $\varepsilon$ es arbitrario, concluye del inciso anterior que
+                $$
+                \int_a^b \alpha f(x)dx=\alpha\int_a^b f(x)dx.
+                $$
+            </li> 
+        
+        </ol>
+        </div>
+
+
+
+      
 
 
 </body>
