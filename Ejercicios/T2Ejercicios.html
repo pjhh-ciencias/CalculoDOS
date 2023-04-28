@@ -1,3 +1,4 @@
+
 <!DOCTYPE html PUBLIC >
 
 <html lang="es">
@@ -29,7 +30,7 @@
     </script>
 
     <!-- This part is for using single $ for latex input, instead of \(\) -->
-    <script>
+    <!--<script>
         MathJax = {
         tex: {
             inlineMath: [['$', '$'], ['\\(', '\\)']]
@@ -38,9 +39,7 @@
             fontCache: 'global'
         }
     };
-    </script>
-
-
+    </script>-->
 
     <!-- CSS -->
 
@@ -635,6 +634,98 @@
             </li> 
         
         </ol>
+        </div>
+                
+        <div class="ejercicio-box">
+          <h2 class="number-title" id="Ejer:CoroLinealidadIntervalos"> Ejercicio</h2> 
+          <p>
+              Sea $f:[a,b] \to \mathbb{R}$ integrable. Sea $c\in (a,b)$ fijo y arbitrario. Demuestra
+              $$
+              \int_c^bf(x)dx=\int_a^b f(x)dx-\int_a^cf(x)dx.
+              $$
+              <b>Sugerencia:</b> Usa la linealidad respecto a intervalos
+          </p>
+        </div>
+
+        <div class="ejercicio-box">
+          <h2 class="number-title" id="Ejer:CoroLinealidadIntervalos"> Ejercicio</h2> 
+          <p>Usando el ejercicio anterior  resulve los siguientes ejercicios.
+              <ol>
+                  <li>
+                      Calcula $\displaystyle{\int_1^2 x^2 dx}$.
+                  </li>
+                  <li>
+                      Encuentra un número \(b>2\) tal que $\displaystyle{\int_1^2x^2dx=\int_2^b x^2dx}.$
+                  </li>
+              </ol> 
+          </p>
+        </div>
+
+        <div class="ejercicio-box">
+          <h2 class="number-title"> Ejercicio</h2> 
+          <p>
+              Supon que $f:[0,\infty) \to \mathbb{R}$ es una función que satisface 
+              $\int_0^b f(x)dx=3b^2+2b+1$, para todo
+              $b>0$. Calcula
+              <ol>
+                  <li>$$\int_0^5 f(x)dx.$$</li> 
+                  <li>$$\int_1^7 f(x)dx.$$</li> 
+              </ol>
+          </p>
+
+        </div>
+
+
+
+        <div class="ejercicio-box">
+          <h2 class="number-title"> Ejercicio</h2> 
+          <p>
+              Define la función $F(x,y)=2-x+3x^2y+x^2y^3$, $x,y\in \mathbb{R}$. 
+              Calcula las siguientes integrales:
+          </p>
+        <ol>
+          <li>$\int_0^1 F(x,y)dx$.</li> 
+          <li>$\int_0^2 F(x,y)dx$.</li> 
+          <li>$\int_1^2 F(x,y)dx$ </li>
+          <li>$\int_0^1 F(x,y)dy$</li>
+          <li>$\int_0^2 F(x,y)dy$.</li> 
+          <li>$\int_1^2 F(x,y)dy$ </li>
+        </ol>
+          <p>
+              En este ejercicio puedes usar las fórmulas 
+              \begin{eqnarray*}
+                  \int_0^b xdx = \frac{b^2}{2} \\
+                  \int_0^b x^2dx = \frac{b^3}{3}\\
+                  \int_0^b x^3dx = \frac{b^4}{4}
+              \end{eqnarray*}
+          </p>
+
+
+        </div>
+
+        <div class="ejercicio-box">
+          <h2 class="number-title"> Ejercicio</h2> 
+          <p>
+              Sea $s:[c,d]\to \mathbb{R}$ escalonada. Define $\tilde{s}:[-d,-c] 
+              \to \mathbb{R}$ por $\tilde{s}(x)=s(-x)$. Demuestra: 
+              $$
+              \int_{-d}^{-c}\tilde{s}(x)dx=\int_{c}^d s(x)dx.
+              $$
+          </p>
+          
+        </div>
+
+        <div class="ejercicio-box">
+          <h2 class="number-title"> Ejercicio</h2> 
+          <p>
+              Sea $f:[c,d]\to \mathbb{R}$ una función integrable. 
+              Define $\tilde{f}:[-d,-c]\to \mathbb{R}$  por
+              $\tilde{f}(x)=f(-x)$ (la función reflejada). Demuestra que $\tilde{f}$ es integrable y que:
+          
+              $$
+              \int_{-d}^{-c}\tilde{f}(x)dx= \int_c^d f(x)dx
+              $$
+          </p>
         </div>
 
 
