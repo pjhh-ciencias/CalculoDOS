@@ -24,22 +24,12 @@
             sen: "\\operatorname{sen}",
             seg: ["\\overrightarrow{#1}", 1]
           },
-          tags: "ams" /* this part is for numbered equations */
+          tags: "ams", /* this part is for numbered equations */
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
         }
       };
     </script>
 
-    <!-- This part is for using single $ for latex input, instead of \(\) -->
-    <script>
-        MathJax = {
-        tex: {
-            inlineMath: [['$', '$'], ['\\(', '\\)']]
-            },
-        svg: {
-            fontCache: 'global'
-        }
-    };
-    </script>
 
 
 
@@ -89,8 +79,214 @@
   <body class="fondo-body" >
     <h1 class="number-title flexbox"> Ejercicios propuestos tercer parcial </h1>   
        
-    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
-      <p></p>
-    </div>
+    
+      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2> 
+        <p>
+            Expresa los siguiente límites como integrales. No es necesario evaluar la integral.
+        </p>
+
+          <ol>
+            <li>$\displaystyle{\lim_{n\to \infty} \frac{1}{n} \sum_{i=1}^n e^{(3i)/n}}$.
+            </li> 
+            <li>$\displaystyle{\lim_{n\to \infty} \frac{\pi}{n} \sum_{i=1}^n \sen\left(\pi+\frac{\pi i}{n} \right)}$.
+            </li> 
+            <li>$\displaystyle{\lim_{n\to \infty} \frac{1}{n} \sum_{i=1}^n \sqrt{2+\frac{i}{n}}}$.
+            </li> 
+            <li>$\displaystyle{\lim_{n\to \infty} \frac{1}{n} \sum_{i=1}^n \frac{1}{3+(i/n)^2}}$
+            </li> 
+          </ol>
+          <p>
+          <b>Sugerencia:</b> Utiliza los resultados previos a la definición de sumas de Riemann.
+          </p>
+      </div>
+  
+      <div class="ejercicio-box">
+        <h2 class="number-title" id="Ejer:CotasMaxMinIntegral"> Ejercicio</h2> 
+        <p>
+            Sea $f:[a,b] \to \mathbb{R}$ continua. Prueba que existen $m_{f}$ y $M_{f}$ números reales tales que 
+            $$
+            m_f(b-a) \leq \int_a^b f(x)dx \leq M_f(b-a).
+            $$
+        </p>
+      </div>
+
+          
+      <div class="ejercicio-box">
+        <h2 class="number-title" id="Ejer:LemaIntegralCeroDePositivas"> Ejercicio</h2> 
+        <p>Sea $f:[a,b]\to \mathbb{R}$ continua en $[a,b]$ con $f(x)\geq 0 $ 
+            para todo $x\in [a,b]$. Prueba que si $f(x_0) > 0 $  para algún $x_0\in [a,b]$, entonces
+            $$
+            \int_a^b f(x)dx >0
+            $$ 
+        </p>
+      </div>
+
+            
+      <div class="ejercicio-box">
+        <h2 class="number-title" id="Ejer:IntegralCeroDePositivas"> Ejercicio</h2>  
+        <p>Sea $f:[a,b]\to \mathbb{R}$ continua en $[a,b]$ con $f(x)\geq 0 $ 
+            para todo $x\in [a,b]$. Si $\displaystyle{\int_a^bf(x)dx=0}$
+            demuestra que $f(x)=0$ para toda $x\in [a,b]$. 
+        </p>
+        <p><b>Sugerencia:</b> usa el <a href="#Ejer:LemaIntegralCeroDePositivas">Ejercicio 3.3</a>.
+        </p>
+      </div>
+
+      <div class="ejercicio-box">
+        <h2 class="number-title"> Ejercicio</h2> 
+        <p>
+            Da un ejemplo de una función continua $f:[a,b]\to \mathbb{R}$ tal que 
+            $$\int_a^b f(x)dx>0$$ 
+            pero que no se cumpla $f(x) \geq 0$
+            para todo $x\in [a,b]$.
+        </p>
+      </div>
+
+      <div class="ejercicio-box">
+        <h2 class="number-title"> Ejercicio</h2> 
+        <p>
+            Este ejercicio muestra la relación entre la oscilación de una función y la continuidad de la misma.
+        </p>
+
+        <p>Sea $f:[a,b]\to \mathbb{R}$ una función y $x_0$ un punto fijo en el intervalo. Prueba que
+            $$
+            \lim_{\delta \to 0}\omega_f([x_0-\delta, x_0+\delta])=0
+            $$
+            si y sólo si   $f$ es continua en $x_0$. 
+        </p>
+      </div>
+
+            
+      <div class="ejercicio-box">
+        <h2 class="number-title"> Ejercicio </h2>
+        <p>
+            En éste ejercicio se prueba la fórmula 
+            \[
+            \int_a^b x^p dx =\frac{1}{p+1}(b^{p+1}-a^{p+1})
+            \]
+            válida para todo \(p \in \mathbb{N}\) y \(a,b\in \mathbb{R}\).
+        </p>
+        <p>
+            Denota \(f(x)=x^p\) y sea \(P_n=\{x_i\}_{i=0}^n\) la partición 
+            homogénea de longitud \(n\). Para \(i=1,\dots, n\) considera las puntos 
+            \(r_i=\sqrt[p]{\frac{1}{p+1}\sum_{k=0}^{p} x_{i-1}^kx_i^{p-k}}\).
+        </p>
+        <ol>
+            <li>
+                Prueba que \(r_i\in [x_{i-1},x_i]\) para toda \(i=1,\dots, n\).
+            </li>
+            <li>
+                Prueba que 
+                \[
+                    \sum_{i=1}^n f(r_i)(x_i-x_{i-1})=\frac{1}{p+1}(b^p-a^p)
+                \]
+                Sugerencia: para todos \(x,y\in \mathbb{R}\) y \(m\in \mathbb{N}\), 
+                \(x^m-y^m=(x-y)\left(\sum_{k=0}^{m-1}  y^kx^{m-1-k}  \right)\).
+            </li>
+            <li>Concluye  usando el Teorema sobre aproximación de la integral mediane sumas de Riemann que:
+                \[
+                \int_a^b x^p dx =\frac{1}{p+1}(b^{p+1}-a^{p+1})
+                \]
+            </li>
+        </ol>
+
+      </div>
+
+
+      
+
+      <div class="ejercicio-box">
+        <h2 class="number-title"> Ejercicio </h2>
+        <p>
+            En éste ejercicio generaliza el <a href="#Ejer:Integral1/x^2">Ejercicio 5.14</a>
+        </p>
+        <p>
+            Fija \(p\geq 2\) un número natural y denota \(f(x)=\frac{1}{x^p}\) y sea \(P_n=\{x_i\}_{i=0}^n\) la partición 
+            homogénea de longitud \(n\). Para \(i=1,\dots, n\) considera las puntos 
+            \(r_i=\sqrt[p]{\frac{(p+1)x_{i-1}^{p-1} x_i^{p-1}}{\sum_{k=0}^{p-2} x_{i-1}^kx_i^{p-2-k}}}\).
+        </p>
+        <ol>
+            <li>
+                Prueba que \(r_i\in [x_{i-1},x_i]\) para toda \(i=1,\dots, n\).
+            </li>
+            <li>
+                Prueba que 
+                \[
+                    \sum_{i=1}^n f(r_i)(x_i-x_{i-1})=\frac{1}{p-1}\left(\frac{1}{b^{p-1}}-\frac{1}{a^{p-1}}\right)
+                \]
+                Sugerencia: para todos \(x,y\in \mathbb{R}\) y \(m\in \mathbb{N}\), 
+                \(x^m-y^m=(x-y)\left(\sum_{k=0}^{m-1}  y^kx^{m-1-k}  \right)\).
+            </li>
+            <li>
+                Concluye  usando el <a href="#Ejer:AproximacionSumasRiemann">Ejercicio 5.11</a> que:
+                \[
+                \int_a^b \frac{1}{x^p} dx =\frac{1}{p-1}\left(\frac{1}{b^{p-1}}-\frac{1}{a^{p-1}}\right)
+                \]
+            </li>
+        </ol>
+
+      </div>
+
+      
+        <div class="ejercicio-box">
+          <h2 class="number-title" id="Ejer:LimiteSumasOscilaciones"> Ejercicio </h2>
+          <p>
+              Sea \(f:[a,b]\to \mathbb{R}\) una función continua en todo punto de \([a,b]\). Sea 
+              \(P=\{x_i\}_{i=0}^n\) la partición homogenea de longitud \(n\) de \([a,b]\). Prueba que 
+              \[
+              \lim_{n\to \infty} \sum_{i=1}^n \omega_f([x_{i-1},x_i])(x_i-x_{i-1})  =0
+              \]
+          </p>
+
+        </div>
+
+                
+        <div class="ejercicio-box">
+          <h2 class="number-title"> Ejercicio</h2> 
+          <p>
+              Calcular las siguientes integrales.
+          </p>
+
+        <ol>
+          <li>$\displaystyle{\int_{4}^{5} \sqrt{x-3}dx}$.</li> 
+          <li>$\displaystyle{\int_{-1}^{6}(x+2)^{10}dx}$.</li> 
+          <li>$\displaystyle{\int_{-8}^{4}(x-4)^{20}dx}$.</li> 
+          <li>$\displaystyle{\int_{8}^{9}\sqrt[3]{x+7}dx}$.</li> 
+          <li>$\displaystyle{\int_{0}^{4}(x-1)^{5}xdx}$.</li> 
+          <li>$\displaystyle{\int_{-2}^{4} \sqrt[4]{x-2}dx}$.</li> 
+        </ol>
+        </div>
+
+
+        
+        <div class="ejercicio-box">
+          <h2 class="number-title" id="Ejer:CambioVariableReescalemientosEscalonadas"> Ejercicio</h2> 
+          <p>
+              Sea $s:\mathbb{R} \to \mathbb{R}$ una función 
+              escalonada y  $k \not= 0$ un escalar. Demuestra:
+          </p>
+        <ol>
+          <li>
+              si $k>0$
+              $$
+              \int_{a }^{b} s(k x)dx=\frac{1}{k} \int_{k a}^{k b} s(u)du.
+              $$
+          </li> 
+          <li>
+              si $k < 0$
+              $$
+              \int_{a }^{b} s(k x)dx=\frac{1}{|k|} \int_{k b}^{k a} s(u)du.
+              $$
+          </li> 
+        </ol>
+        </div>
+
+
+      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2>
+        <p></p>
+      </div>
+
+      
+
      
 </body>
