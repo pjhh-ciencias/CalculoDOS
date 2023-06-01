@@ -423,10 +423,120 @@
       </p>
       </div>
 
-      <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2> 
+      <!-- <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2> 
         <p>Para cada uno de los siguientes ejercicios la funcion $F(x)$ es una función de una variable $x$ 
           que aparece  en el límite (o los límites) de integración de la integral dada. Expresa la funcón $F(x)$ 
           explicitamente 
+        </p>
+      </div> -->
+
+          
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2> 
+      <p>
+          Encuentra $p$, un polinomio de grado 3, tal que $p(0)=p(-1)=0, p(1)=5$ y  $2\displaystyle{\int_0^1 p(x)dx}=4$
+      </p>
+    </div>
+
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2> 
+      <p>
+          Encuentra todos los polinomios de grado 2, $p$, tales que $p(0)=1$ y $\displaystyle{\int_{-2}^{2}p(x)dx}=0$.
+      </p>
+    </div>
+
+    <div class="ejercicio-box">
+    <h2 class="number-title"> Ejercicio</h2> 
+    <p>Encuentra todos los reales $a,b$, con $a \leq b$, tales que $$\int_{a}^{b}(3-2x)^5dx=0.$$</p>
+    </div>
+
+
+    <div class="ejercicio-box"><h2 class="number-title"> Ejercicio</h2> 
+        <p>
+            Calcular:
+        </p>
+    <ol class="three-column">
+
+        <li>$\displaystyle{\int_1^8 (x+8)^{10}dx}$</li> 
+        <li>$\displaystyle{\int_{10}^{11} \sqrt{x-3}dx}$</li> 
+        <li>$\displaystyle{\int_1^2 x\sqrt{x-1}dx}$</li> 
+        <li>$\displaystyle{\int_{2}^{3}x^2\sqrt{x-2}dx}$</li> 
+        <li>$\displaystyle{\int_{5}^{6} x\sqrt[3]{x-4}}$</li> 
+    </ol>
+    <p><b>Sugerencia:</b> Puedes utilizar
+        $$
+        \int_a^b x^p dx=\frac{b^{p+1}-a^{p+1}}{p+1}
+        $$
+        válida para cualesquiera reales $a$ y $b$ y racional $p$.
+        
+    </p>
+    </div>
+
+      
+      <div class="ejercicio-box">
+        <h2 class="number-title"> Ejercicio</h2> 
+        <p>
+            Sea $f:\mathbb{R}\to \mathbb{R}$ una función tal que, para toda $a>0$, 
+            $f$ es integrable en $[-a,a]$. 
+        </p>
+    <ol>
+        <li>
+            Si $f$ es una función par (\(f(-x)=f(x)\) para todo \(x\)) probar:
+            $$
+            \int_{-a}^a f(x)dx=2\int_0^af(x)dx
+            $$
+        </li> 
+    
+    
+        <li>
+            Si $f$ es una función  impar (\(f(-x)=-f(x)\) para todo \(x\)) probar:
+            $$
+            \int_{-a}^af(x)dx=0
+            $$
+        </li> 
+    </ol>
+      </div>
+
+      
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2> 
+      <h3>La medida geométrica de un intervalo</h3>
+      <p>
+          
+          Existen otras nociones de longitues. 
+          Dado $(a,b)\subset (0,\infty)$ se define se define su 
+          medida o longitud geométrica como
+          $$
+          \lambda(a,b)=\ln(b)-\ln(a),
+          $$
+          donde $\ln$ denota la función logaritmo. Se puede pensar a la 
+          medida geométrica como un análogo de la longitud ( $b-a$) y  
+          $(0,\infty)$ podemos pensar la multiplicación por reales positivos 
+          como un análogo de la translación.
+      </p>
+    <ol>
+      <li>
+          Prueba que  $\lambda(\gamma a,\gamma b)=\lambda(a,b)$, para $\gamma >0$.
+      </li> 
+
+      <li>
+          Para una función escalonada con dominio contenido en \((0,+\infty)\), 
+          $s:(0,+\infty)\to \mathbb{R}$, su integral sobre \([a,b]\), con respecto a la medida 
+          geométrica, se define  como:
+          $$
+          \int_a^b s(x)d\lambda(x):=\sum_{i=1}^n s_i (\ln(x_i)-\ln(x_{i-1}))
+          $$
+          donde \(P=\{x_i\}_{i=1}^n\) es una partición de \([a,b]\) tal que \(s\)
+          es constante en \((x_{i-1},x_i)\) y el valor de dicha constante es \(s_i\).
+      </li> 
+      <li>
+          Si $\gamma >0$ prueba que :
+          $$
+          \int_{a/\gamma}^{b/\gamma} s(\gamma x)d\lambda(x)=\int_a^b s(u)d\lambda(u)
+          $$
+      </li> 
+    </ol>
+    </div>
 
 
      
