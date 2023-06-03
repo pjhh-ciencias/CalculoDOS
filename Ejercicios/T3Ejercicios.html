@@ -515,6 +515,123 @@
     </ol>
     </div>
 
+      <div class="ejercicio-box">
+        <h2 class="number-title"> Ejercicio</h2> 
+        <p>
+            Para $0< b < 1,$ encuentre la integral de
+            $$
+            \int_0^b \frac{1-x^{n+1}}{1-x}dx
+            $$ 
+        </p>
+        <p><b>Sugerencia:</b> usar
+            $$
+            \sum_{j=1}^n x^j=\frac{1-x^{n+1}}{1-x}
+            $$
+            la cual es válida para \(|x|< 1\).</p>
+      </div>
 
+      <div class="ejercicio-box">
+          <h2 class="number-title" id="Ejer:CambioVariableReduccionIntervaloUnitario"> Ejercicio</h2>
+          <p>Este ejercicio muestra que en la teoría de integración en intervalos cerrados y 
+            acotados es suficiente estudiar funciones definidas en $[0,1]$.
+           </p> 
+           
+           Si $f:[a,b]\to \mathbb{R}$ es una función integrable en $[a,b]$, entonces
+          $$\int_a^bf(x)dx=(b-a)\int_0^1 f(a+(b-a)t)dt$$
+          </p>  
+          
+      </div>
+
+
+    <div class="ejercicio-box">
+      <h2 class="number-title"> Ejercicio</h2> 
+      <p>
+          Da un ejemplo de una función $f:[a,b]\to \mathbb{R}$ tal que $f^2$ es integrable en $[a,b]$ pero $f$ no lo sea.
+      </p>
+      <!-- <button class="respButton hvr-grow ">Demostración  </button>
+      <div class="resp-box flexbox">
+        <div class="flexbox">
+          <a href="https://youtu.be/HH13AHpV8oQ" target="_blank" > Video </a>
+        </div>
+      </div> -->
+    </div>
+
+    <div class="ejercicio-box"><h2 class="number-title" id="Ejer:IntegralCuadradaNoIntegraldelCuadrado"> Ejercicio</h2> 
+      <p>
+          Da un ejemplo de una función $f:[a,b]\to \mathbb{R}$, integrable en $[a,b]$ y tal que
+          $$
+          \int_a^b f^2(x)dx \ne \left( \int_a^b f(x)dx \right)^2
+          $$
+      </p>
+
+    </div>
+
+      <div class="ejercicio-box">
+        <h2 class="number-title"> Ejercicio</h2> 
+        <p>El ejercicio  <a href="#Ejer:IntegralCuadradaNoIntegraldelCuadrado">Ejercicio 3.32</a>  
+          muestra que la relación entre  $\displaystyle{\int_a^b f^2(x) dx}$ y $\displaystyle{\left(\int_a^bf(x) dx\right)^2}$ no es sencilla. 
+          Este ejercicio da una desigualdad que involucra estas integrales. 
+        </p>
+        <ol>
+            <li>
+                Demuestra que para toda función continua $f:[a,b]\to \mathbb{R}$,
+                $$
+                \left( \int_a^b f(x)dx \right)^2 \leq (b-a)\int_a^b f^2(x)dx.
+                $$
+            </li> 
+            <li>
+                Da un ejemplo donde se muestre que la desigualdad anterior puede ser estricta.
+            </li> 
+        </ol>
+      </div>
+
+
+        <div class="ejercicio-box">
+          <h2 class="number-title"> Ejercicio</h2> 
+          <p>
+              Sean $f,g:[a,b] \to \mathbb{R}$ dos funciones integrables en $[a,b]$. 
+              Demuestra que la función producto $fg$ es integrable en $[a,b]$.
+          </p>
+          <p>
+              <b>Sugerencia:</b> $(f+g)^2=f^2+2fg+g^2$.
+          </p>
+        </div>
+
+
+        <div class="ejercicio-box">
+          <h2 class="number-title"> Ejercicio</h2> 
+      
+      <ol> 
+      
+          <li>
+              Prueba que toda suma $\displaystyle{\sum_{i=1}^n a_i}$, se puede escribir como 
+              la integral de una función escalonada.
+          </li> 
+      
+          <li>
+              Usa el inciso anterior y el ejercico 1 para probar la desigualdad de Cauchy-Schwartz
+              $$
+              \left| \sum_{i=1}^n a_ib_i  \right| \leq 
+              \left(\sum_{i=1}^n a_i^2 \right)^{1/2}\left(\sum_{i=1}^n b_i^2 \right)^{1/2}
+              $$
+              para cualesquiera  números reales, $a_{1},\dots, a_n, b_1,\dots, b_n$.
+          </li> 
+      </ol>
+      </div>
+
+      <div class="ejercicio-box">
+        <h2 class="number-title"> Ejercicio</h2> 
+        <p> 
+            Sea $f:[0,1]\to \mathbb{R}$ una función integrable en $[0,1]$ con $f\geq 0$ en $[0,1]$.  Demuestra:
+            $$
+            \int_0^1\sqrt{f}\leq \bigg(\int_0^1 f \bigg)^{1/2}
+            $$
+            Sugerencia: usa la desigualdad de Cauchy-Schwartz para integrales.
+        </p>
+        <p><b>Nota:</b> En general , si $f$ es integrable con $f\geq 0$ entonces $\sqrt{f}$ 
+            también es integrable. Este hecho se puede usar
+            en este ejercicio.        
+        </p>
+    </div>
      
 </body>
