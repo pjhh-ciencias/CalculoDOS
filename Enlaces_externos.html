@@ -12,7 +12,9 @@
 
 
     <!-- This part is to load main.js -->
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+
+    
 
 
     <!-- Next part is for new coomands -->
@@ -22,62 +24,82 @@
           macros: {
             sen: "\\operatorname{sen}",
             seg: ["\\overrightarrow{#1}", 1]
-          }
+          },
+          tags: "ams" /* this part is for numbered equations */
         }
       };
     </script>
 
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>
+    
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+    .lista{
+        counter-reset: listaCounter 0 sublistaCounter 1 subsublistaCounter 1 subsubsublistaCounter 1;
+      }
+    /* .sublista{
+        counter-reset: sublistaCounter 1  SubsublistaCounter;
+      } */
+    </style>
+
     <!-- CSS -->
 
     <link rel="stylesheet" , href="style.css" />
-
-    
     <!-- Top Menu  -->
+    
+          
+        <header class="main-header">
+        
+          <div class="logo_superior_umar">
+          <a href="https://www.umar.mx" target="_blank"><img src="./Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+          <div class="contenedor_titulo">
+          <div class="title">Cálculo II</div>
+          <div class="subtitle">Universidad del Mar, campus Huatulco</div>
+          <div class="subsubtitle">Licenciatura en Actuaría </div>
+          <!-- <div class="subsubtitle"><a href="https://www.umar.mx/web/ensenanza/licenciaturas/licenciatura_en_administracion_turistica" target="_blank">Licenciatura en Administración Turística</a> </div>    -->
+      
+          </div>
 
+      
+        </header>
 
-    <header class="main-header">
-      <h1> Cálculo DOS </h1>
-     <nav class="top-nav">
-       <ul>
-        <li> <a href="https://pjhh-ciencias.github.io/CalculoDOS/Home.html"> Inicio  </a> </li>
-            <li> <a href="https://pjhh-ciencias.github.io/CalculoDOS/Informacion_General.html"> Información general </a> </li>
-            <!-- <li> <a href="https://pjhh-ciencias.github.io/CalculoDOS/Notas.html"> Notas </a> </li> -->
-            <li> <a href="https://pjhh-ciencias.github.io/CalculoDOS/Ejercicios.html"> Ejercicios </a> </li>
+        <nav class="top-nav">
+          <ul>
+            <li> <a href="https://pjhh-ciencias.github.io/CalculoDOS/Home.html"> Inicio  </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/CalculoDOS/Informacion_General.html">Información</a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/CalculoDOS/Notas.html"> Notas  </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/CalculoDOS/Ejercicios.html"> Ejercicios</a> </li>
             <li> <a href="https://pjhh-ciencias.github.io/CalculoDOS/Enlaces_externos.html"> Links </a> </li>
-        </ul>
-     </nav>
-     <!-- 
-      <nav class="small-nav" align=right>
-        <button onclick="myFunction()">Claro/Obscuro 
-      </nav> 
-    -->
+          </ul>
+          </nav>
+        <!-- 
+          <nav class="small-nav" align=right>
+            <button onclick="myFunction()">Claro/Obscuro 
+          </nav> 
+        -->
 
-    </header>
+      <!-- This part is for title in tab-->
+              
+      <title>Enlaces externos</title>
+      </head>  
 
-    <!-- This part is for title in tab-->
-    <title> Enlaces externos  </title>
-  
-</head>
+  <body class="fondo-body" ><h1 class="page-title"> Enlaces externos </h1>   
 
-   <body class="fondo-body" ><h1 class="number-title flexbox"> Enlaces externos </h1>   
+    <div class="links-box" style = "font-family: 'Oldenburg', cursive;">
 
-    
-    <div class='info-box'>
-     <div>
-      <ol>
-     <!-- 
-      <li> <a href="https://jupyter.org/try-jupyter/lab/" target="_blank" > <font size="5"> <b> Jupyter Lab</b></font></a> </li><br>
-      <li> <a href="https://jupyter.org/try-jupyter/retro/notebooks/?path=notebooks/Intro.ipynb" target="_blank"> <font size="5"> <b> Jupyter notebooks</b></font> </a> </li><br>
-      
-      
-      <li > <a href="https://mybinder.org/v2/gh/pjhh-ciencias/CalculoDOS/dea5ccfe76685442b2b2feef887ba3b4fb5f1ba3"> <font size="5"> <b>mybinder</b></font> </h3></a> </li>-->
-    
-      <!-- <li> <a href="https://docs.python.org/es/3/tutorial/introduction.html"> Tutorial de Python</i></li>
-      <li> <a href="https://colab.research.google.com/drive/13txfwm39hti1QQ2hRMBJKoEw-heIG_Js#scrollTo=BhXkK-qhZTKA"> Introducción a Python </a>   </li>
-      -->
-      </ol>
-      </div>
-
-   </div>
+      <!-- <a href="https://pseint.sourceforge.net/index.php?page=descargas.php" target="_blank">  Link para descargar PSeInt </a> 
+      <a href="https://pseint.sourceforge.net/index.php?page=descargas.php" target="_blank">  Link para descargar PSeInt </a>  -->
+    </div>   
   </body>
 </html>

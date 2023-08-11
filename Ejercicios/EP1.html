@@ -1,0 +1,249 @@
+
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+    
+
+   <!-- Next part is for new coomands -->
+   <script>
+    window.MathJax = {
+      tex: {
+        macros: {
+          sen: "\\operatorname{sen}",
+          seg: ["\\overrightarrow{#1}", 1]
+        },
+        tags: "ams" /* this part is for numbered equations */
+      }
+    };
+  </script>
+
+  <!-- This part is for using single $ for latex input, instead of \(\) -->
+  <script>
+      MathJax = {
+      tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+          },
+      svg: {
+          fontCache: 'global'
+      }
+  };
+    </script>
+
+    
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+      /* body.number-title{
+        counter-reset: sectionCounter 1 subsectioncounter ;
+      } */
+      h1.page-title-practica{
+        counter-reset: semanaCounter 1 sectionCounter  subsectionCounter;
+      }
+    </style>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+    <!-- Top Menu  -->
+    
+          
+        <header class="main-header">
+        
+          <div class="logo_superior_umar">
+          <a href="https://www.umar.mx" target="_blank"><img src="../Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+          <div class="contenedor_titulo">
+          <div class="title">Introducción a la Programación</div>
+          <div class="subtitle">Universidad del Mar, campus Huatulco</div>
+          <div class="subsubtitle">Licenciatura en Actuaría </div>
+          <!-- <div class="subsubtitle"><a href="https://www.umar.mx/web/ensenanza/licenciaturas/licenciatura_en_administracion_turistica" target="_blank">Licenciatura en Administración Turística</a> </div>    -->
+      
+          </div>
+
+      
+        </header>
+
+        <nav class="top-nav">
+          <ul>
+            <li> <a href="https://pjhh-ciencias.github.io/CPProgramacion/Home.html"> Inicio  </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/CPProgramacion/Informacion_General.html"> Información </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/CPProgramacion/Notas.html"> Notas  </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/CPProgramacion/Practicas.html">Prácticas</a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/CPProgramacion/Enlaces_externos.html"> Links </a> </li>
+          </ul>
+          </nav>
+       
+        
+        <!-- 
+          <nav class="small-nav" align=right>
+            <button onclick="myFunction()">Claro/Obscuro 
+          </nav> 
+        -->
+
+      <!-- This part is for title in tab-->
+            
+      <title>Práctica 1 </title>
+      </head>  
+
+
+
+  <body class="fondo-body" ><h1 class="page-title-practica"> Práctica 1 </h1>   
+
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Sean $a,b\in \mathbb{Z}$. Escribe un algoritmo para determinar el mayor y el menor de entre $a$ y $b$.</p>
+      <button class="respButton hvr-grow ">  Solución       </button>
+          <div class="resp-box flexbox">
+            <div class="flexbox">  
+              <ol>
+              <li>Inicio</li>
+              <li></li>
+              <li>Fin</li>
+              </ol>
+            </div>
+          </div>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Sean $a,b$ y $c$  en $\mathbb{Z}$. Escribe un algoritmo para determinar el mayor y el menor de entre $a,b$ y $c$.</p>
+      <button class="respButton hvr-grow ">  Solución       </button>
+          <div class="resp-box flexbox">
+            <div class="flexbox">  
+              <ol>
+              <li>Inicio</li>
+              <li></li>
+              <li>Fin</li>
+              </ol>
+            </div>
+          </div>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Sean $a,b$ y $c$ números enteros. Escribe un algoritmo que permita ordenar $a,b$ y $c$ de forma ascendente.</p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Sean $a,b$ y $c$ números enteros positivos. Escribe un algoritmo que permita determinar si estos forman una terna pitagórica.</p>
+      <p><b><u>Recuerda:</u></b> Una <b>terna pitagórica</b> es un conjunto de tres números enteros positivos $a,b$ y $c$ que satisfacen el teorema de 
+      Pitágoras.</p>
+      <button class="respButton hvr-grow ">  Solución       </button>
+          <div class="resp-box flexbox">
+            <div class="flexbox">  
+              <ol>
+              <li>Inicio</li>
+              <li></li>
+              <li>Fin</li>
+              </ol>
+            </div>
+          </div>
+    </div>
+
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Sean $a,b \in \mathbb{R}$. Escribe un algoritmo para determinar el punto medio entre $a$ y $b$</p>
+      <button class="respButton hvr-grow ">  Solución       </button>
+          <div class="resp-box flexbox">
+            <div class="flexbox">  
+              <ol>
+              <li>Inicio</li>
+              <li></li>
+              <li>Fin</li>
+              </ol>
+            </div>
+          </div>
+    </div>
+
+ 
+    
+  
+    <div class="nota-box"><h1 class="number-title-practica">Práctica</h1>
+      <p>Sea $n \in \mathbb{N}$. Escribe un algoritmo para determinar la suma de los primeros $n$ números naturales.</p>
+
+      <p><b><u>Observación:</u></b> Este ejercicio esta relacionado con una fórmula obtenido por Gauss. Realiza esta práctica sin utilizar la fórmula de Gauss.</p>
+
+      <button class="respButton hvr-grow ">  Solución       </button>
+          <div class="resp-box flexbox">
+            <div class="flexbox">  
+              <ol>
+              <li>Inicio</li>
+              <li></li>
+              <li>Fin</li>
+              </ol>
+            </div>
+          </div>
+    </div>
+
+
+    <div class="nota-box"><h1 class="number-title-practica">Práctica</h1>
+      <p>Sea $n \in \mathbb{N}$. Escribe un algoritmo para determinar el producto de los primeros $n$ números naturales.
+      </p>
+      <p><b><u>Observación:</u></b> Este producto es llamado el <b>factorial</b> de $n$ y se denota por $n!$.</p>
+     
+      <button class="respButton hvr-grow ">  Solución       </button>
+          <div class="resp-box flexbox">
+            <div class="flexbox">  
+              <ol>
+              <li>Inicio</li>
+              <li></li>
+              <li>Fin</li>
+              </ol>
+            </div>
+          </div>
+    </div>
+    
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Escribe un algoritmo que dada la base $b$ y la altura $h$ de un rectángulo determine su área.</p>
+
+      <button class="respButton hvr-grow ">  Solución       </button>
+          <div class="resp-box flexbox">
+            <div class="flexbox">  
+              <ol>
+              <li>Inicio</li>
+              <li></li>
+              <li>Fin</li>
+              </ol>
+            </div>
+          </div>
+        
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo  de un algoritmo que lea los tres lados de un
+        triángulo, calcule e imprima su área.</p>
+      <p><b><u>Hint:</u></b> Utiliza la fórmula de Herón. </p>   
+      <button class="respButton hvr-grow ">  Solución       </button>
+          <div class="resp-box flexbox">
+            <div class="flexbox">  
+              <ol>
+              <li>Inicio</li>
+              <li></li>
+              <li>Fin</li>
+              </ol>
+            </div>
+          </div>     
+    </div>
+
+
+<!--    
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p></p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p></p>
+    </div>
+  -->
+ 
+</body>

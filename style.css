@@ -1,24 +1,70 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300;0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?&family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?&family=Rock+3D&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Enriqueta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gelasio&display=swap'); /* font-family: 'Gelasio', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');/* font-family: 'Hina Mincho', serif; */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');/* font-family: 'EB Garamond', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap');/* font-family: 'Josefin Slab', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');/* font-family: 'Caprasimo', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');/* font-family: 'Mate SC', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');/* font-family: 'Fredericka the Great', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');/* font-family: 'Special Elite', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');/* font-family: 'Neucha', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Tangut&display=swap');/* font-family: 'Noto Serif Tangut', serif; */
+@import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic&display=swap'); /* font-family: 'GFS Neohellenic', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Oldenburg&display=swap'); /* font-family: 'Oldenburg', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');/* font-family: 'Raleway', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400&display=swap');/* font-family: 'Dosis', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=swap');/* font-family: 'Urbanist', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');/* font-family: 'Space Mono', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&display=swap');
+/* font-family: 'Josefin Slab', serif; */
 
 html, body{
   margin: 0;
-  padding: 50px;
-  font-family: "Quicksand";
+  padding: 4%;
+  font-family: "Quicksand";  
+  /* font-family: 'Noto Serif Tangut', serif; */
+  /* font-family: 'GFS Neohellenic', sans-serif; */
+  /* font-family: 'Neucha', cursive; */
+  /* font-family: 'Oldenburg', cursive; */
+  /* font-family: 'Dosis', sans-serif; */
+  /* font-family: 'Urbanist', sans-serif; */
+  /* font-family: 'Space Mono', monospace; */
+  /* font-family: 'Josefin Slab', serif; */
+  /* font-family: 'Raleway', sans-serif;   */
+  /* font-family: 'Special Elite', cursive; */
+  /* font-family: 'Mate SC', serif; */
+  /* font-family: 'Josefin Slab */
+  /* font-family: 'Hina Mincho', serif; */
+  /* font-family: 'EB Garamond', serif; */
+  /* font-family: 'Josefin Slab', serif; */
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center; */
+  /* font-size: 105%; */
 }
 
 .fondo-body{
   background:  rgb(255, 255, 255);
-  color: black;
-}
-
-.fondo-body-dark{
-  background: #121212;
-  color: rgb( 165, 105, 189 );
+  color: rgb(0, 0, 0);
 }
 
 .fondo{
@@ -26,68 +72,113 @@ html, body{
   color: black;
 }
 
-
-
-.flexbox{
+.logo_superior_umar{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 10%;
 }
 
+.flexbox{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+align-content: flex-start;
+width: 100%;
+}
 
-
-.flexbox_{
+.informacion_profesor{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-content: center;
+  width: 100%;
+  /* padding: 1%; */
+  margin-bottom: 2.5%;
+  margin-top: -0.5%;
+  }
+
+  
+.flexbox-linea{
+  flex-direction: column;
 }
 
 
 /* for top menu */
+
 .main-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   text-align: center;
   width: 100%;
-  font-size: 20px;
-  margin-bottom: 0px;
-  margin-top: -80px;
+  margin-bottom: 0%;
+  margin-top: -7.5%;
   }
+
+
  
 .small-nav{
-    padding: 10px;
+    padding:10px;
   }
 
-.top-nav ul {
-  margin:5px;
-  padding: 10px;
-  border-radius: 25px;
-  background-color: rgb(132, 198, 236);
-  color:    rgb(255, 0, 0);
+.top-nav{
+text-align:center; 
+padding: 1%;
+width: 100%;
 }
 
+.top-nav ul {
+  margin-top: 0%;
+  margin-bottom: 0.5%;
+  padding: .65%; 
+  border-radius: 25px;
+  /* background-color: rgba(109, 195, 248, 0.747); */
+  /* background-color:  rgba(218, 165, 32, 0.841); */
+  background-color: rgb(228, 255, 255);
+  width: 100%;
+}
 
-.top-nav-dark ul {
-    margin:10px;
-    padding: 10px;
-    border-radius: 25px;
-    background:  rgb(53, 93, 131);
-    color:    rgb(205, 173, 218);
-  }
-
-.top-nav li {
+.top-nav li{
+  padding: 1.75%; 
   display: inline;
-
+  color: #ffffff;
+  width: 100%;
 }
 
 .top-nav a{
-  padding: 15px;
-  font-size: 32px;
+  padding: .5%; 
+  font-size: 185%;
+  font-weight: 450;
   text-decoration: none;
+  color: rgb(25,25,112);
+  /* font-family: system-ui; */
+  font-family: 'IM Fell English';
+  /* color:  rgb(0, 0, 0); */
+  width: 100%;
 }
 
 .top-nav a:hover{
-  background-color: #d2f1f7;
+  transition: background-color 0.75s ease;
+  /* transition: font-size 0.75s ease; */
+  background-color: rgb(211, 211, 211);
+  font-size: 185%;
+  font-weight: 550;
+  color: rgb(25,25,112);
+  border-radius: 10px;
+  width: 100%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-transition: font-size 0.75s ease;
+  -moz-transition: font-size 0.75s ease;
+  -ms-transition: font-size 0.75s ease;
+  -o-transition: font-size 0.75s ease;
 }
 
 .small-nav button{
@@ -105,12 +196,130 @@ html, body{
   }
 
 
-.calculo-title{
+.title{
+  font-size: 310%;
+  padding: .75%;
+  /* font-weight: 700;  */
   text-align: center;
-  font-size: 150px;
-  font-family: "Cinzel";
+  /* font-family: "Cinzel"; */
+  font-family: 'Fredericka the Great', cursive;
+  /* font-family: 'Jacques Francois Shadow', cursive; */
+  /* font-family: 'Caprasimo', cursive; */
+  /* font-family: 'Mate SC', serif; */
+  margin-top: 0%;
+  /* color:  rgb(0, 46, 145); */
+  color: rgb(184,134,11); 
+  width: 100%;
 }
 
+.subtitle{
+  font-size: 150%;
+  /* font: italic monospace; */
+  /* font-family: 'Bacasime Antique', serif; */
+  /* font-family: 'Bacasime Antique', serif; */
+  /* font-family: 'Jacques Francois Shadow', cursive; */
+  font-family: 'Fredericka the Great', cursive;
+  padding: 0.15%;
+  font-weight: 600;
+  margin-bottom: 0%;
+  margin-top: -1%;
+  color:  rgb(0,0,128); 
+  width: 80%;
+  
+}
+
+/* .subtitle a{
+  text-decoration: none;
+}
+
+.subtitle a:visited {
+  text-decoration: none;
+} */
+
+.subsubtitle{
+  font-size: 150%;
+  padding: 0px;
+  /* font-family: "Muli"; */
+  /* font-family: 'Bacasime Antique', serif; */
+  /* font-family: 'Bacasime Antique', serif; */
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: 600; 
+  margin-top: 0.25%;
+  color: rgb(15, 108, 185);
+  width: 100%;
+}
+
+.subsubtitle a{
+  content:" ";
+  /* color:  rgba(255, 157, 0, 0.867); */
+  /* color: rgba(0, 136, 255, 0.682); */
+  text-decoration: none;
+  width: 100%;
+}
+
+.subsubtitle a:visited {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  margin-top: 1%;
+}
+
+.title_nombre{
+  font-size: 130%;
+  /* padding: .8%; */
+  font-weight: 800;
+  font-family: 'IM Fell English', serif;
+  /* font-family: 'Faustina', serif; */
+  /* font-family: 'Cormorant SC', serif; */
+  /* font-family: 'Arbutus Slab', serif; */
+  /* font-family: 'Enriqueta', serif; */
+
+  /* font-family: "Freckle Face"; */
+  margin-bottom: 0%;
+  margin-top: -5%;
+  text-align: center;
+  color:  rgb(105,105,105);
+  width: 100%;
+}
+
+
+.subtitle_nombre{
+  font-size: 115%;
+  /* padding: 0.15%; */
+  font-weight: 800;
+  /* font-family: 'IM Fell English', serif; */
+  font-family: 'Shippori Mincho B1', serif;
+  margin-bottom: -8%;
+  margin-top: 0%;
+  text-align: center;
+  color:  rgb(105,105,105);
+  width: 100%;
+  
+}
+
+.contenedor_titulo{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-between;
+}
+
+
+h1.title{
+  font-size: 180%;
+  font-weight: 600;
+  /* font-family: "Muli"; */
+  /* font-family: 'Pangolin', cursive; */
+  /* font-family: 'Cabin Sketch', cursive; */
+  font-family: 'Hina Mincho', serif;
+  /* font-family: 'Jacques Francois Shadow', cursive; */
+  margin-top: -2.5%;
+  margin-bottom: 0%;
+  content:" ";
+  color: rgb(0, 77, 179);
+}
+/* 
 .secciones-main ul{
   margin: 0;
   padding: 10px;
@@ -125,73 +334,191 @@ html, body{
   padding: 10px;
   font-size: 30px;
   text-decoration: none;
+} */
+
+img.wmargen {
+  margin-top:-120px;
+  margin-right: -120px;
 }
 
  /* /////////////   for numbering /////////////////////////*/
+body.card{
+    counter-reset: semanaCounter 1 sectionCounter  subsectionCounter;
+    counter-reset: listaCounter 1 sublistaCounter  SubsublistaCounter;
+          }
 
-
- body.card{
-   counter-reset: sectionCounter  cardCounter ;
- }
-
- 
-
-h1.title{
-  font-size: 35px;
-  font-family: "Muli";
-  content:" ";
-  color: rgb(0, 4, 255);
+h1.page-title{
+  font-size: 225%;
+  text-align: center;
+  /* font-family: "Muli"; */
+  font-family: 'Gelasio', serif;
+  /* font-family: 'IM Fell English', serif; */
+  /* content:" "; */
+  /* margin-bottom: -5px; */
+  padding: 0%;
+  width: 100%;
+  /* color: rgba(255, 0, 0, 0.789); */
+  /* color:  rgb(0,0,128);  */
+  color: rgb(184,134,11); 
+  /* font-weight: 500; */
 }
 
+h1.page-subtitle{
+  font-size: 250%;
+  padding: 0%;
+  margin-bottom: -1.5%;
+  /* font-weight: 600; */
+  text-align: center;
+  font-family: 'Hina Mincho', serif;
+  /* font-family: 'Caprasimo', cursive; */
+  /* font-family: 'IM Fell English', serif; */
+  /* font-family: "Cinzel"; */
+  margin-top: 1%;
+  /* color:  rgb(0, 46, 145); */
+  /* color: rgb(184,134,11);  */
+  width: 100%;
+  /* color: rgb(7, 136, 250);  */
+  color: rgb(3, 89, 165); 
+}
 
 h1.number-title{
-  counter-reset: sectionCounter  cardCounter ;
-  font-family: "Muli";
-  font-size: 33px;
+  font-size: 185%;
+  margin-top: -1.75%;
+  padding: 0.25%;
+  text-align: center;
+  /* font-weight: 800; */
+  /* font-family: "Muli"; */
+  font-family: 'Hina Mincho', serif;
+  /* font-size: 33px; */
+  color: rgb(3, 89, 165); 
 }
 
-
-h1.number-subtitle:before{
-  font-family: "Muli";
- }
- 
-
-h1.number-title:before{
- counter-increment: sectionCounter;
- /*content:"Semana " counter(sectionCounter) " ";*/
- content:" " counter(sectionCounter) " ";
- font-family: "Muli";
- color: rgb(255, 255, 255);
+h1.number-title::before{
+  /* font-family: "Roboto"; */
+  font-family: 'Hina Mincho', serif;  
+  counter-increment: sectionCounter;
+  content: counter(semanaCounter)"."counter(sectionCounter)".";
 }
 
 h2.number-title{
-  font-size: 35px;
-  font-family: "Roboto";
+  margin-top: -1.5%;
+  padding: 0.25%;
+  font-size: 175%;
+  font-family: 'Hina Mincho', serif;
+  color: rgb(3, 89, 165); 
 }
 
-h2.number-title:before{
- counter-increment: cardCounter;
- content: counter(sectionCounter)"."counter(cardCounter)"";
+h2.number-title::before{
+  /* font-family: "Roboto"; */
+  font-family: 'Hina Mincho', serif;
+  counter-increment: subsectionCounter;
+  content: counter(semanaCounter)"."counter(sectionCounter)"."counter(subsectionCounter)". ";
 }
+
+/* Para praticas  */
+
+h1.page-title-practica{
+  font-size: 225%;
+  text-align: center;
+  /* font-family: "Muli"; */
+  font-family: 'Gelasio', serif;
+  /* font-family: 'IM Fell English', serif; */
+  /* content:" "; */
+  /* margin-bottom: -5px; */
+  padding: 0%;
+  width: 100%;
+  /* color: rgba(255, 0, 0, 0.789); */
+  /* color:  rgb(0,0,128);  */
+  color: rgb(184,134,11); 
+  /* font-weight: 500; */
+}
+
+h1.number-title-practica{
+  font-size: 185%;
+  margin-top: -1.75%;
+  padding: 0.25%;
+  text-align: center;
+  /* font-weight: 800; */
+  /* font-family: "Muli"; */
+  font-family: 'Hina Mincho', serif;
+  /* font-size: 33px; */
+  color: rgb(3, 89, 165); 
+}
+
+h1.number-title-practica::after{
+  /* font-family: "Roboto"; */
+  font-family: 'Hina Mincho', serif;  
+  counter-increment: sectionCounter;
+  content: " " counter(semanaCounter)"."counter(sectionCounter) ".";
+}
+
 
 
 /*/////////////// for body boxes  /////////////////////*/
 
-
 .info-box{
-  background:  rgb(218, 237, 245);
+  /* background:  rgb(218, 237, 245); */
+    background: rgb(252, 252, 244);
     color: black;
     border-radius: 20px;
     padding: 50px;
-    border: 5px solid  rgb(0, 120, 175);
-    margin: auto;
-    margin-bottom: 50px;
+    border: 0px solid  rgb(218,165,32);
+    margin: auto; 
     margin-top: 50px;
     font-size: 20px;
-    width: 80%;
-    box-shadow: 2px 2px 15px 2px  rgb(31, 147, 201);
+    width: 85%;
+    box-shadow: 0px 0px 10px 0px  rgb(218,165,32);
+    text-align: justify;
 }
 
+.links-box{
+  /* background:  rgb(218, 237, 245); */
+    background: rgb(252, 252, 244);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5%;
+    color: black;
+    border-radius: 20px;
+    padding: 10px;
+    border: 0px solid  rgb(218,165,32);
+    margin: auto; 
+    /* margin-top: 50px; */
+    font-size: 26px;
+    width: 85%;
+    box-shadow: 0px 0px 10px 0px  rgb(218,165,32);
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: flex-start;
+}
+
+.links-box a{ 
+  padding: 10px;
+  font-weight: 500;
+  /*color:  rgba(14, 137, 253, 0.801);*/
+  color:  rgb(255, 0, 0); 
+
+}
+
+.links-box a:visited{
+  color:  rgb(0, 0, 139); 
+  /* color:  rgba(14, 137, 253, 0.801); */
+}
+
+
+.info-profesor-box{
+  /* background:  rgb(218, 237, 245); */
+    background: rgb(252, 252, 244);
+    color: black;
+    border-radius: 20px;
+    padding: 50px;
+    border: 0px solid  rgb(218,165,32);
+    margin: auto; 
+    margin-top: 50px;
+    font-size: 20px;
+    font-size: 21.5px;
+    width: 85%;
+    box-shadow: 0px 0px 10px 0px  rgb(218,165,32);
+}
 
 .info-box-dark{
     background:  rgb(  33, 47, 60  );
@@ -222,24 +549,7 @@ h2.number-title:before{
 }
 
 
-.definicion-box-dark{
-  background:  rgb(  33, 47, 60  );
-  color:  rgb( 165, 105, 189 );
-  border-radius: 25px;
-  padding: 20px;
-  border: 10px  solid rgba(229,180,255,0.5);
-  margin: auto;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  font-size: 20px;
-  font-family:  "Lucida Console" Courier monospace;
-  width: 70%;
-  box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );
-}
-
-
-.ejercicio-box{
- 
+.ejercicio-box{ 
   background:  rgb(218, 237, 245);
   color: black;
   border-radius: 20px;
@@ -254,64 +564,25 @@ h2.number-title:before{
 }
 
 
-.ejercicio-box-dark{
-  background:  rgb(  33, 47, 60  );
-  color:  rgb( 165, 105, 189 );
-  border-radius: 25px;
-  padding: 20px;
-  border: 10px solid rgba(92,213,241,0.5);
-  margin: auto;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  font-size: 20px;
-  width: 70%;
-  box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );
-}
-
-
-
 .nota-box{
-  background:  rgb(218, 237, 245);
+    /* background:  rgb(218, 237, 245); */
+    background: rgb(252, 252, 244);
     color: black;
     border-radius: 20px;
-    padding: 50px;
-    border: 5px solid  rgb(0, 120, 175);
-    margin: auto;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    font-size: 21px;
-    width: 90%;
-    box-shadow: 2px 2px 15px 2px  rgb(31, 147, 201);
-
-  /*
-    background:  rgb( 255, 249, 205 );
-    border-radius: 25px;
-    padding: 20px;
-    border: 10px solid rgba(255,206,102,0.5);
+    padding: 5%;
+    border: 0px solid  rgb(218,165,32);
     margin: auto;
     margin-bottom: 50px;
     margin-top: 50px;
     font-size: 20px;
-    width: 70%;
-    box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );
-    */
+    text-align: justify;
+    /* font-size: 110%; */
+    /* font-weight: 600; */
+    /* justify-content: space-evenly; */
+    width: 85%;
+    box-shadow: 0px 0px 10px 0px  rgb(218,165,32);
+
 }
-
-
-.nota-box-dark{
-    background:  rgb(  33, 47, 60  );
-    color:  rgb( 165, 105, 189 );
-    border-radius: 25px;
-    padding: 20px;
-    border: 10px solid rgba(255,206,102,0.5);
-    margin: auto;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    font-size: 20px;
-    width: 70%;
-    box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );
-}
-
 
 .teorema-box{
   background:  rgb(218, 237, 245);
@@ -324,35 +595,8 @@ h2.number-title:before{
   margin-top: 50px;
   font-size: 20px;
   width: 80%;
-  box-shadow: 2px 2px 15px 2px  rgb(31, 147, 201);
-  /*
-    background:  rgb( 255, 249, 205 );
-    border-radius: 25px;
-    padding: 20px;
-    border: 10px solid rgb(251,161,255,0.5);
-    margin: auto;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    font-size: 20px;
-    width: 70%;
-    box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );*/
-}
-
-
-.teorema-box-dark{
-    background:  rgb(  33, 47, 60  );
-    color:  rgb( 165, 105, 189 );
-    border-radius: 25px;
-    padding: 20px;
-    border: 10px solid rgb(251,161,255,0.5);
-    margin: auto;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    font-size: 20px;
-    width: 70%;
-    box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );
-}
-
+  box-shadow: 2px 2px 15px 2px  rgb(31, 147, 201);  
+  }
 
 .resp-box{
   display: none;
@@ -426,8 +670,6 @@ h2.number-title:before{
     box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );
 }
 
-
-
 .quiz-box-dark{
     background:  rgb(  33, 47, 60  );
     color:  rgb( 165, 105, 189 );
@@ -441,7 +683,6 @@ h2.number-title:before{
     width: 70%;
     box-shadow: 10px 10px 15px  rgb( 112, 123, 124 );
 }
-
 
 .algoritmo-box{
   background:  rgb(218, 237, 245);
@@ -542,48 +783,48 @@ h2.number-title:before{
 /*//// tables //////*/
 
 table {
+  
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 
 th{
-  border: 1.7px solid #46a1df;
+  border: 1.7px solid rgb(3, 89, 165); 
   text-align: center;
-  padding: 8px;
-  background-color: rgb(207, 207, 207);
+  padding: 9px;
+  /* background-color: rgb(247, 16, 16); */
 }
 
+
+ thead tr:nth-child(even) {
+  background-color: rgb(221, 221, 220);
+ }
+
+thead tr:nth-child(odd) {
+  background-color: rgb(252, 252, 244);
+
+}
+
+
 td{
-  border: 1.7px solid #46a1df;
+  border: 1.7px solid rgb(3, 89, 165);  
   text-align: left;
   padding: 8px;
   
 }
 
-tr:nth-child(even) {
+tbody tr:nth-child(even) {
   background-color: rgb(255, 255, 255);
 }
 
-tr:nth-child(odd) {
+tbody tr:nth-child(odd) {
+  /* background-color: rgb(196, 231, 255); */
   background-color: rgb(196, 231, 255);
 }
 
-
 .three-column{
   columns: 3;
-  /*grid-template-columns: repeat(2, 1fr);*/
-}
-
-.three-column li{
-  margin-bottom: 7.5%; 
-  /*grid-template-columns: repeat(2, 1fr);*/
-}
-
-.three-column li::before{
-  
-  content: attr(data-number);
-  color: blue; 
   /*grid-template-columns: repeat(2, 1fr);*/
 }
 
@@ -592,30 +833,158 @@ tr:nth-child(odd) {
   /*grid-template-columns: repeat(2, 1fr);*/
 }
 
-.two-column li{
-  margin-bottom: 7.5%;  
-  /*grid-template-columns: repeat(2, 1fr);*/
-}
-
-ol li {
-  margin-bottom: 1%;
-}
-
 
 /*//// Listas//////*/
-/*
-ol {
-  list-style: none;
-  counter-reset: my-counter;
-}
-ol li {
-  counter-increment: my-counter;
-  padding: 1px;
+
+
+ol li::marker{
+  font-weight: bold; 
+  /* font-size: 17px; */
+  /* /* color: rgb(211, 40, 40);  */
 }
 
-ol li::before {
-  content:  counter(my-counter) ".- ";
-  color: rgb(0, 0, 0);
+
+/* Para listas anidadas  */
+
+
+.lista {
+  counter-reset: listaCounter;
+  list-style-type: none; /* Quita los números de las listas ordenadas */
+}
+
+.lista li{ 
+  counter-increment: listaCounter;
+  /* font-weight: bold; */
+  /*counter-reset: sublistaCounter; */
+  padding: 1.25px;
+  /* font-size: 20px; */
+} 
+
+
+
+.lista li::marker{
   font-weight: bold;
-  font-size: 20px;
-}*/
+  /* font-size: 17px; */
+  /* color: rgb(211, 40, 40); */
+}
+
+.lista li::before{
+  font-weight: bold;
+  content: " " counter(listaCounter)".-";
+  /* counter-increment: sublistaCounter; */
+}
+
+.lista li::after{
+  /* font-weight: bold; */
+  content: " "
+}
+
+.lista li::marker{
+  font-weight: bold; /* Aplica negrita al marcador (número) */
+  /* font-size: 17px; */
+  /* color: rgb(211, 40, 40); */
+}
+
+/* .lista li::after{  */
+  /* counter-increment: listaCounter; */
+  /*counter-reset: sublistaCounter; */
+/* }  */
+
+.sublista {
+  counter-reset: sublistaCounter;
+  list-style-type: none; /* Quita los números de las listas ordenadas */
+}
+
+.sublista li{
+  counter-increment: sublistaCounter;
+}
+
+.sublista li::marker{
+  font-weight: bold; /* Aplica negrita al marcador (número) */
+  /* font-size: 17px; */
+  /* color: rgb(211, 40, 40); */
+}
+
+.sublista li::before{
+  font-weight: bold;
+  content: " " counter(listaCounter)"."counter(sublistaCounter)".- ";
+  /* counter-increment: sublistaCounter; */
+}
+
+.sublista li::after{
+  /* font-weight: bold; */
+  content: " "
+}
+
+/* Subsubistas */
+
+
+.subsublista {
+  counter-reset: subsublistaCounter;
+  list-style-type: none; /* Quita los números de las listas ordenadas */
+}
+
+.subsublista li{
+  counter-increment: subsublistaCounter;
+}
+
+.subsublista li::marker{
+  font-weight: bold; /* Aplica negrita al marcador (número) */
+  /* font-size: 17px; */
+  /* color: rgb(211, 40, 40); */
+}
+
+.subsublista li::before{
+  font-weight: bold;
+  content: " " counter(listaCounter)"."counter(sublistaCounter)"."counter(subsublistaCounter)".- ";
+  /* counter-increment: sublistaCounter; */
+}
+
+.subsublista li::after{
+  /* font-weight: bold; */
+  content: " "
+}
+
+/* Subsubsublista */
+
+.subsubsublista{
+  counter-reset: subsubsublistaCounter;
+  list-style-type: none; /* Quita los números de las listas ordenadas */
+}
+
+.subsubsublista li{
+  counter-increment: subsubsublistaCounter;
+}
+
+.subsubsublista li::marker{
+  font-weight: bold; /* Aplica negrita al marcador (número) */
+  /* font-size: 18px; */
+  /* color: rgb(211, 40, 40); */
+}
+
+.subsubsublista li::before{
+  font-weight: bold;
+  content: " " counter(listaCounter)"."counter(sublistaCounter)"."counter(subsublistaCounter)"."counter(subsubsublistaCounter)".- ";
+  /* counter-increment: sublistaCounter; */
+}
+
+.subsubsublista li::after{
+  /* font-weight: bold; */
+  content: " "
+}
+
+/* 
+h1.number-title-practica{
+  
+  font-family: 'Hina Mincho', serif;
+  
+  color: rgb(3, 89, 165); 
+}
+
+h1.number-title-practica:after{
+  
+  font-family: 'Hina Mincho', serif;  
+  counter-increment: sectionCounter;
+  content: " " counter(semanaCounter)"."counter(sectionCounter) ".";
+}
+*/

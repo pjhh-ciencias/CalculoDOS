@@ -12,7 +12,9 @@
 
 
     <!-- This part is to load main.js -->
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+
+    
 
 
     <!-- Next part is for new coomands -->
@@ -22,58 +24,94 @@
           macros: {
             sen: "\\operatorname{sen}",
             seg: ["\\overrightarrow{#1}", 1]
-          }
+          },
+          tags: "ams" /* this part is for numbered equations */
         }
       };
     </script>
 
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>
+    
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+    .lista{
+        counter-reset: listaCounter 0 sublistaCounter 1 subsublistaCounter 1 subsubsublistaCounter 1;
+      }
+    /* .sublista{
+        counter-reset: sublistaCounter 1  SubsublistaCounter;
+      } */
+    </style>
+
     <!-- CSS -->
 
     <link rel="stylesheet" , href="style.css" />
-
-    
     <!-- Top Menu  -->
-
-
+    
+          
         <header class="main-header">
-          <h1> Cálculo DOS  </h1>
-         <nav class="top-nav">
+        
+          <div class="logo_superior_umar">
+          <a href="https://www.umar.mx" target="_blank"><img src="./Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+          <div class="contenedor_titulo">
+          <div class="title">Cálculo II</div>
+          <div class="subtitle">Universidad del Mar, campus Huatulco</div>
+          <div class="subsubtitle">Licenciatura en Actuaría </div>
+          <!-- <div class="subsubtitle"><a href="https://www.umar.mx/web/ensenanza/licenciaturas/licenciatura_en_administracion_turistica" target="_blank">Licenciatura en Administración Turística</a> </div>    -->
+      
+          </div>
+
+      
+        </header>
+
+        <nav class="top-nav">
           <ul>
-          <li> <a href="https://pjhh-ciencias.github.io/CalculoDOS/Home.html"> Inicio  </a> </li>
-          <li> <a href="https://pjhh-ciencias.github.io/CalculoDOS/Informacion_General.html"> Información general </a> </li>
-          <!-- <li> <a href="https://pjhh-ciencias.github.io/CalculoDOS/Notas.html"> Notas </a> </li> -->
-          <li> <a href="https://pjhh-ciencias.github.io/CalculoDOS/Ejercicios.html"> Ejercicios </a> </li>
-          <li> <a href="https://pjhh-ciencias.github.io/CalculoDOS/Enlaces_externos.html"> Links </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/CalculoDOS/Home.html"> Inicio  </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/CalculoDOS/Informacion_General.html">Información</a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/CalculoDOS/Notas.html"> Notas  </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/CalculoDOS/Ejercicios.html"> Ejercicios</a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/CalculoDOS/Enlaces_externos.html"> Links </a> </li>
           </ul>
-         </nav>
-         <!-- 
+          </nav>
+        <!-- 
           <nav class="small-nav" align=right>
             <button onclick="myFunction()">Claro/Obscuro 
           </nav> 
         -->
 
-        </header>
-
       <!-- This part is for title in tab-->
+          
       <title>Notas</title>
-    
-  </head>
+      </head>  
 
-  <body class="fondo-body" ><h1 class="number-title flexbox">Notas</h1>
-    <div class="info-box">
-      <center><font size=5>
-      
-       
-      
-      <!--   <a href="https://pjhh-ciencias.github.io/CalculoDOS/Semanas/S1.html"><b> Semana 2 </b> </a><br><br>
-      
-        <a href="./Ejercicios/funciones_tercer_parcial.psc"><b> Semana 16 </b> </a> <br><br> 
-      -->
-  
-      </font></center>
+      <body class="fondo-body" ><h1 class="page-title"> Notas</h1>  
+
+    <div class="links-box"  style = "font-family: 'Oldenburg', cursive;">
+        <a href="https://pjhh-ciencias.github.io/CPProgramacion/Semanas/S1.html">Semana 1</a> 
+         <a href="https://pjhh-ciencias.github.io/CPProgramacion/Semanas/S2.html">Semana 2</a> 
+       <!-- <a href="https://pjhh-ciencias.github.io/CPProgramacion/Semanas/S3.html">Semana 3</a> 
+        <a href="https://pjhh-ciencias.github.io/CPProgramacion/Semanas/S4.html">Semana 4</a> 
+        <a href="https://pjhh-ciencias.github.io/CPProgramacion/Semanas/S5.html">Semana 5</a> 
+        <a href="https://pjhh-ciencias.github.io/CPProgramacion/Semanas/S6.html">Semana 6</a> 
+        <a href="https://pjhh-ciencias.github.io/CPProgramacion/Semanas/S7.html">Semana 7</a> 
+        <a href="https://pjhh-ciencias.github.io/CPProgramacion/Semanas/S8.html">Semana 8</a> 
+        <a href="https://pjhh-ciencias.github.io/CPProgramacion/Semanas/S9.html">Semana 9</a> 
+        <a href="https://pjhh-ciencias.github.io/CPProgramacion/Semanas/S10.html">Semana 10</a> 
+        <a href="https://pjhh-ciencias.github.io/CPProgramacion/Semanas/S11.html">Semana 11</a> 
+        <a href="https://pjhh-ciencias.github.io/CPProgramacion/Semanas/S12.html">Semana 12</a> 
+        <a href="https://pjhh-ciencias.github.io/CPProgramacion/Semanas/S13.html">Semana 13</a> 
+        <a href="https://pjhh-ciencias.github.io/CPProgramacion/Semanas/S14.html">Semana 14</a>  -->
     </div>
-     
-
 
   </body>
 
