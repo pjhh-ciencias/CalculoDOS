@@ -417,7 +417,7 @@ h2.number-title::before{
 
 /* Para praticas  */
 
-h1.page-title-practica{
+h1.page-title-ejercicios-propuestos{
   font-size: 225%;
   text-align: center;
   /* font-family: "Muli"; */
@@ -433,7 +433,7 @@ h1.page-title-practica{
   /* font-weight: 500; */
 }
 
-h1.number-title-practica{
+h1.number-title-ejercicio{
   font-size: 185%;
   margin-top: -1.75%;
   padding: 0.25%;
@@ -445,7 +445,7 @@ h1.number-title-practica{
   color: rgb(3, 89, 165); 
 }
 
-h1.number-title-practica::after{
+h1.number-title-ejercicio::after{
   /* font-family: "Roboto"; */
   font-family: 'Hina Mincho', serif;  
   counter-increment: sectionCounter;
