@@ -175,60 +175,68 @@
       <div class="flexbox">
         <img src="../Imagenes/g7.png" alt="AreaBajoParabola" width="60%" height="auto">
         </div>
-        <p>Comencemos dividiendo el invervalo $[0,b]$ en un número igual de partes. Para 
-          mantener un control de las partes vamos a usar un entero $n$.
+        <p>Comencemos dividiendo el invervalo $[0,b]$ en un subintervalos de igual longitud. Para 
+          mantener un control de la cantidad de subintervalos vamos a usar un entero positivo $n$:
         </p>
-        <p>Por ejemplo, si $n=2$  dividimos $[a,b]$ en dos partes iguales y además vamos a enumerar los 
-          puntos de estas partes iniciando con $x_0=0$, luego el punto medio 
-          \(x_1=\frac{b}{2}\) y el punto final \(x_2=b\). En general si dividimos 
-          el intervalo \([0,b]\) en \(n\) partes iguales los puntos de la partición,
-          iniciando con \(x_0=0\)  y terminando con \(x_n=b\) son 
-          \[
+        <p>Por ejemplo, si $n=2$  dividimos $[a,b]$ en dos subintervalos iguales y además vamos a enumerar los 
+          extremos de estos subintervalos iniciando con $x_0=0$, luego el punto medio 
+          $\displaystyle{x_1=\frac{b}{2}}$ y el punto final $x_2=b$.
+          
+        </p>
+        
+        
+        <p>En general, si dividimos el intervalo $[0,b]$ en $n$ subintervalos de igual longitud los
+          puntos de la <em>partición</em> del intervalo $[a,b]$, iniciando con $x_0=0$  y 
+          terminando con $x_n=b$ son: 
+        </p>
+       
+        
+        <p>
+          $$
           x_0=0,x_1= \frac{b}{n}, x_2=2\frac{b}{n}, \dots, x_{n-1}=(n-1)\frac{b}{n}, x_n=n\frac{b}{n}=b.
-          \]
-  
+          $$
+        </p>
+
+        <p>
+          <div class="flexbox">
+              <img src="../Imagenes/particion.png" alt="Particion" width="70%" height="auto">
+            </div>
       </p>
-      <!-- <div class="flexbox">
-          <img src="./Images/S1-Image5.png" alt="Particion" width="40%" height="auto">
-        </div> -->
-      <p>
-          Ahora calculamos el área de cada rectángulo cuya base 
-          está en el intervalo \([x_{i-1},x_i]\) (con \(1 \leq i \leq n \)). En este punto necesitamos 
-          hacer una decisión de cómo tomar la altura de cada  rectángulo, pues podemos aproximar el 
-          área con rectángulos por debajo de la gráfica o por arriba. Vamos a usar los rectángulos 
-          por arriba. En esta situación tenemos la siguiente figura
+      
+        <p>
+          Luego, para cada $i=1,2,\ldots,n$  calculemos el área de cada rectángulo cuya base 
+          está en el intervalo \([x_{i-1},x_i]\). En este punto necesitamos tomar una decisión
+          de cómo tomar la altura de cada rectángulo, pues podemos aproximar el 
+          área con rectángulos por debajo de la gráfica o por arriba. Utilicemos en este momentos 
+          los rectángulos por arriba. En esta situación tenemos la siguiente figura
       </p>
       <div class="flexbox">
-        <img src="../Imagenes/g13.png" alt="AreaBajoParabola" width="60%" height="auto">        </div>
+        <img src="../Imagenes/g15.png" alt="" width="60%" height="auto">        
+      </div>
       <p>
-          Sumando todos las contribuciones de área de los  rectángulos obtenemos 
-          \[
+          Sumando las contribuciones de área de cada uno de  los  rectángulos obtenemos:
+          $$
           \sum_{i=1}^{n} \frac{b^3}{n^3}i^2=\frac{b^3}{n^3}\sum_{i=1}^ni^2.
-          \]
-          lo cual es una  aproximación del área bajo la parábola.
+          $$
+          lo cual es una  aproximación al área bajo la gráfica de la parábola en el intervalo $[0,b]$.
+          En este punto el mayor problema es <b>estimar la expresión anterior cuando $n$ tiende a infinito.</b>
+          Afortunadamente Arquímides pudo reconocer la suma anterior como un volumen. 
       </p>
+
       <p>
-          En este punto uno topa con pared pues necesitamos una manera de estimar la 
-          expresión anterior cuando \(n\) tiende a infinito. Afortunadamente Arquímides 
-          pudo reconocer la suma anterior como un volumen. 
-      </p>
-      <p>
-          En particular Arquímides notó que la suma \(\sum_{i=1}^n i^2\) es una estimación 
-          del volúmen de la pirámide rectangular de base \(n\) y altura \(n\). Lo anterior 
-          se puede ver mediante la siguiente figura, que acomoda cubos de lado 1 en forma de 
+          En particular Arquímides notó que la suma $\displaystyle{\sum_{i=1}^n i^2}$ es una estimación 
+          del volúmen de la pirámide rectangular de base $n$ y altura $n$. Lo anterior 
+          se puede apreciar en la siguiente figura, que <em>acomoda</em> cubos de lado $1$ en forma de 
           una pirámide.
   
       </p>
       <div class="flexbox">
-        <iframe src="https://pjhh-ciencias.github.io/CalculoDOS/Notas/suma_cuadrados.html" width="100%" height="500" allow="fullscreen"></iframe>
-
-        </div>
-      <p>
-          Con este arreglo cada capa tiene un volumen de \(i^2\), empezando con la 
-          base en \(i=n\) y terminando con la cúspide en \(i=1\). El volumen 
-          de dicho cono es \(\frac{1}{3}n^2 n\) (un tercio del área de la base 
-          por la altura). Por lo que si  \(n\) es muy grande la suma 
-          \(\sum_{n=1}^n i^2 \) es aproximadamente \(\frac{1}{3}n^3\).
+        <img src="../Imagenes/suma_cuadrados.png" alt="Suma_cuadrados" width="60%" height="auto">        
+      </div>
+      <p>Colocando a los cubos unitarios de esa manera cada capa tiene un volumen de $i^2$, empezando con la 
+          base en $i=n$ y terminando con la cúspide en $i=1$. El volumen de dicho cono es
+          $\displaystyle{\frac{1}{3}n^2 n}$. Por lo que si $n$ es muy grande la suma 
+          $\displaystyle{\sum_{n=1}^n i^2}$ es aproximadamente $\displaystyle{\frac{1}{3}n^3}$.
       </p>
       <p>
           Por lo tanto 
@@ -237,15 +245,14 @@
           =\frac{b^3}{3}.
           \]
       </p>
+      </div>
+
+      <div class="nota-box"><h1 class="number-title"> Conclusion ejemplo de Arquímides  </h1>  
       <p>
-          Por lo tanto Arquímides dedujo que el área bajo la parábola, de \(x=0\)
-          a \(x=b\), es \(\frac{b^3}{3}\). 
+          Por lo tanto Arquímides dedujo que el área bajo la parábola, de $x=0$
+          a $x=b$, es $\frac{b^3}{3}$. 
       </p>
-      <p>
-          Este ejemplo es muy ilustrativo pues todo lo que se hará en adelante es refinar 
-          las ideas y cuentas que se han hecho.
-      </p>
-     
+      </div>
 
       </div>
 
