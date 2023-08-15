@@ -104,33 +104,34 @@
 
       <div class="nota-box"><h1 class="number-title"> Motivación</h1>  
         <p>Una de las motivaciones más importantes para el desarrollo 
-          del <b>Cálculo Integral</b> es el concepto de <em>área</em>. En
+          del <b>Cálculo Integral</b> es el concepto de <em><b>área</b></em>. En
            particular, calcular <b><em> áreas debajo de gráficas de funciones</em></b>. 
         </p>
 
         <p>La noción de área no la vamos a definir formalmente pues aunque se trata de un  proceso interesante 
           es a la vez extenso. En su lugar, pensemos al área simplemente como una función denotada por $A$
           que asigna números no negativos a ciertas regiones del plano, las cuales llamaremos
-          <b><em>medibles</em></b> y que además para cualesquiera $S$ y $T$ conjuntos medibles
-          se verifican  las siguientes propiedades:
+          <b><em>medibles</em></b> y que además para cualesquiera $R$ y $T$  medibles
+          se satisfacen las siguientes propiedades:
       </p>
       <ol>
-          <li>$A(S) \geq 0$ para todo medible $S$,</li> 
+          <li>$A(R) \geq 0$ para todo medible $R$,</li> 
           <li>$A(\emptyset)=0$,</li>
-          <li>Si $S\cap T =\emptyset$, entonces 
-            $A(S\cup T) = A(S)+ A(T),$ </li>
-          <li>Si $T \subseteq S$, entonces $A(T) \leq A(S)$ y $A(S\setminus T)= A(S)-A(T)$,</li>
-          <li>Si $S$ es un rectángulo de base $b$ y altura $h$, entonces $A(S)=b\cdot h$;</li>
-          <li>Los conjuntos medibles, $S$ y $T$, son <b><em>congruentes</em></b> 
-            si existen <em>rotaciones</em> y/o <em>translaciones</em> que manden uno al otro.
-            Bajo esta definición si $S$ y $T$ son congruentes entonces se debe cumplir que $A(S)=A(T)$,
+          <li>Si $R\cap T =\emptyset$, entonces 
+            $A(R\cup T) = A(R)+ A(T),$ </li>
+          <li>Si $R \subseteq T$, entonces $A(T) \leq A(R)$, </li>
+            <!-- si además $A(R)< \infty$, se satisface que  $A(R\setminus T)= A(R)-A(T)$,</li> -->
+          <li>Si $R$ es un rectángulo de base $b$ y altura $h$, entonces $A(R)=b\cdot h$;</li>
+          <li>Se dice que dos conjuntos medibles $R$ y $T$, son <b><em>congruentes</em></b> 
+            si existen <em>rotaciones</em> y/o <em>traslaciones</em> que manden uno al otro.
+            Bajo esta definición si $R$ y $T$ son congruentes entonces se debe cumplir que $A(R)=A(T)$,
           </li>
           <li>Existe una propiedad adicional que tiene que ver con límites (pero que 
           no es fundamental entender en este momento):
-          Si $\left(S_i\right)_{i=1}^{\infty}$ es una sucesión de conjuntos medibles ajenos dos 
+          Si $\left(R_i\right)_{i=1}^{\infty}$ es una sucesión de conjuntos medibles ajenos dos 
           a dos, entonces 
               $$
-              A\left(\displaystyle{\bigcup_{i=1}^\infty S_i}\right)=\displaystyle{\sum_{i=1}^\infty A(S_i)}
+              A\left(\displaystyle{\bigcup_{i=1}^\infty R_i}\right)=\displaystyle{\sum_{i=1}^\infty A(R_i)}
               $$
         </li>
       </ol>
