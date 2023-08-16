@@ -329,32 +329,29 @@
       <div class="nota-box"><h1 class="number-title"> Suma inferior y superior de Riemann </h1>
         <p>
             Sea $f:[a,b]\to \mathbb{R}$  una función acotada y $P:=\{ x_0, x_1,x_{2}, \ldots,  x_n \}$
-            una partición de $[a,b]$. Para cada $i=1,\ldots,n$ sean
-            <ul>
-              <li>$m_i:=\inf \{ f(x): x\in (x_{i-1}, x_i) \}$,</li>
-              <li>$M_i :=\sup \{f(x) : x\in (x_{i-1}, x_i)\}$.</li>
-            </ul>
+            una partición de $[a,b]$. Para cada $i=1,\ldots,n$ sean $m_i:=\inf \{ f(x): x\in (x_{i-1}, x_i) \}$,
+            y $M_i :=\sup \{f(x) : x\in (x_{i-1}, x_i)\}$.
         </p>
-        <p>Se define la <b>suma inferior de Riemann de $f$, con respecto a la partición $P$</b> como:
-          $$\underline{S}(f,P) :=\sum_{i=1}^n m_i [x_i-x_{i-1}]$$
-        </p>
-        <p>Similarmente se define la <b>suma superior de Riemann de $f$, con respecto a la partición $P$</b> como:
-          $$\overline{S}(f,P) :=\sum_{i=1}^n M_i [x_i-x_{i-1}]$$
-            
-          
-        </p>
+        <ul>
+            <li>Se define la <b>suma inferior de Riemann de $f$, con respecto a la partición $P$</b> como:
+              $$\underline{S}(f,P) :=\sum_{i=1}^n m_i [x_i-x_{i-1}]$$
+            </li>
+            <li>Similarmente se define la <b>suma superior de Riemann de $f$, con respecto a la partición $P$</b> como:
+              $$\overline{S}(f,P) :=\sum_{i=1}^n M_i [x_i-x_{i-1}]$$            
+            </li>
+        </ul>
+        <p>Si $P$ es la partición homogenea de $[a,b]$ de longitud $n$ se denota por  
+          $\overline{S}(f,P)$ a $\overline{S}_n(f)$  y por $\underline{S}(f,P)$ a ${\underline{S}\,}_n(f)$.</p>
       </div>
 
-      <div class="nota-box"><h1 class="number-title"> Observación </h1>
-
-        Los supremos e ínfimos de la definición anterior existen porque  $f$ es  acotada en $[a,b]$.
+      <div class="nota-box"><h2 class="number-title"> Observación </h2>
+        En la definición anterior los valores $m_{i}$ y $M_{i}$ existen para cada 
+        $i=1,\ldots,n$  porque  $f$ es una función acotada  en $[a,b]$.
       </p>
       </div>
       
-      <div class="nota-box"><h1 class="number-title"> Notación </h1>
+      <div class="nota-box"><h2 class="number-title"> Notación </h2>
         <p>
-          Si $P$ es la partición homogenea de $[a,b]$ de longitud $n$ se denota por  
-          $\overline{S}(f,P)$ a $\overline{S}_n(f)$  y por $\underline{S}(f,P)$ a ${\underline{S}\,}_n(f)$.
       </p>
       </div>
 
