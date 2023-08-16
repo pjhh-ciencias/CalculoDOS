@@ -607,13 +607,13 @@ h1.number-title-ejercicio::after{
   padding: 1px;
   border-top:  0px solid   rgb(218, 237, 245);
   border-bottom:  0px solid   rgb(218, 237, 245);
-  border-right:  10px solid   rgb(218, 237, 245);
+  border-right:  0px solid   rgb(218, 237, 245);
   border-left:  0px solid   rgb(218, 237, 245);
   margin: auto;
   margin-bottom: 0px;
   margin-top: 0px;
   font-size: 20px;
-  width: 85%;
+  width: 100%;
   box-shadow: 1px 1px 5px 1px  rgb(31, 147, 201);
 }
 
@@ -720,7 +720,7 @@ h1.number-title-ejercicio::after{
 .respButton{
     display: block;
     border-radius: 25px;
-    border: 10px solid  rgb(214, 234, 248,0.5) ;
+    border: 5px solid  rgb(214, 234, 248,0.5) ;
     margin-right: auto;
     margin-left: auto;
     font-size: 20px;
