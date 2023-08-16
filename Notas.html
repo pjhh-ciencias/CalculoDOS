@@ -303,16 +303,18 @@
       </div>
 
       <div class="nota-box"><h1 class="number-title"> Partición homogenea</h1>
-            <p>Sea $[a,b]$ un intervalo. Una partición $P=\{ x_0, x_1, \ldots,  x_n \}$ se llama <b>homogenea</b> si todos los subintervalos, $[x_{i-1}, x_i]$,  
-                tienen la misma longitud.
+            <p>Sea $[a,b]$ un intervalo. Una partición $P:=\{ x_0, x_1, \ldots,  x_n \}$ de longitud $n$ de $[a,b]$ es  
+              <b>homogenea</b> si todos los subintervalos, $[x_{i-1}, x_i]$, tienen la misma longitud. Es decir, 
+              si para cada $i=1,2,\ldots, n$ se tiene que $x_{i} - x_{i-1} = \displaystyle{\frac{b-a}{n}}$.
             </p>
       </div>
 
-      <div class="nota-box"><h1 class="number-title"> Observación</h1>
-            <p>De esta manera si $P$ es la partición homogenea de $[a,b]$ de longitud $n$ 
+      <div class="nota-box"><h2 class="number-title"> Observación</h2>
+            <p>Si $P:=\{ x_0, x_1, \ldots,  x_n \}$ es la partición homogenea 
+              del intervalo $[a,b]$ de longitud $n$ 
               entonces $[a,b]$ se divide en $n$ subintervalos de la misma longitud,
               por lo que cada subintervalo tiene longitud $\displaystyle{\frac{b-a}{n}}$.
-              Por lo tanto, para moverse entre puntos consecutivos de la partición sólo sumamos 
+              Por lo tanto, para moverse entre dos puntos consecutivos de la partición sólo sumamos 
               $\displaystyle{\frac{b-a}{n}}$, por lo que los puntos de la partición homogenea están dados 
               por: 
                 \begin{eqnarray*}
