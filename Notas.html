@@ -303,20 +303,17 @@
       </div>
 
       <div class="nota-box"><h1 class="number-title"> Partición homogenea</h1>
-            <p>Sea $[a,b]$ un intervalo. Una partición $P:=\{ x_0, x_1, \ldots,  x_n \}$ de longitud $n$ de $[a,b]$ es  
-              <b>homogenea</b> si todos los subintervalos, $[x_{i-1}, x_i]$, tienen la misma longitud. Es decir, 
+            <p>Sea $[a,b]$ un intervalo. Una partición $P:=\{ x_0, x_1, \ldots,  x_n \}$ de longitud $n$ de $[a,b]$
+               es  <b>homogenea</b> si todos los subintervalos, $[x_{i-1}, x_i]$, tienen la misma longitud. Es decir, 
               si para cada $i=1,2,\ldots, n$ se tiene que $x_{i} - x_{i-1} = \displaystyle{\frac{b-a}{n}}$.
             </p>
       </div>
 
       <div class="nota-box"><h2 class="number-title"> Observación</h2>
             <p>Si $P:=\{ x_0, x_1, \ldots,  x_n \}$ es la partición homogenea 
-              del intervalo $[a,b]$ de longitud $n$ 
-              entonces $[a,b]$ se divide en $n$ subintervalos de la misma longitud,
-              por lo que cada subintervalo tiene longitud $\displaystyle{\frac{b-a}{n}}$.
-              Por lo tanto, para moverse entre dos puntos consecutivos de la partición sólo sumamos 
-              $\displaystyle{\frac{b-a}{n}}$, por lo que los puntos de la partición homogenea están dados 
-              por: 
+              del intervalo $[a,b]$ de longitud $n$ entonces $[a,b]$ se divide en
+              $n$ subintervalos de la misma longitud. Más aún, los puntos de
+              la partición homogenea están dados por: 
                 \begin{eqnarray*}
                 x_0&=&a, \\
                 x_1&=&a+\frac{b-a}{n},\\
@@ -329,16 +326,22 @@
             </p>
       </div>
 
-      <div class="nota-box"><h1 class="number-title"> Definición </h1>
+      <div class="nota-box"><h1 class="number-title"> Suma inferior y superior de Riemann </h1>
         <p>
-            Dada una función acotada $f:[a,b]\to \mathbb{R}$ y $P$
-            una partición de $[a,b]$, se define la <b>suma inferior y superior de Riemann de $f$, 
-            con respecto a $P$</b>, como:
-            \begin{eqnarray*}
-            \overline{S}(f,P) :=\sum_{i=1}^n M_i [x_i-x_{i-1}] \\
-            \underline{S}(f,P) :=\sum_{i=1}^n m_i [x_i-x_{i-1}]
-            \end{eqnarray*} 
-            donde $M_i :=\sup \{f(x) : x\in (x_{i-1}, x_i)\}$ y  $m_i:=\inf \{ f(x): x\in (x_{i-1}, x_i) \}$. 
+            Sea $f:[a,b]\to \mathbb{R}$  una función acotada y $P:=\{ x_0, x_1,x_{2}, \ldots,  x_n \}$
+            una partición de $[a,b]$. Para cada $i=1,\ldots,n$ sean
+            <ul class="two-column">
+              <li>$m_i:=\inf \{ f(x): x\in (x_{i-1}, x_i) \}$,</li>
+              <li>$M_i :=\sup \{f(x) : x\in (x_{i-1}, x_i)\}$.</li>
+            </ul>
+        </p>
+        <p>Se define la <b>suma inferior de Riemann de $f$, con respecto a la partición $P$</b> como:
+          $$\overline{S}(f,P) :=\sum_{i=1}^n m_i [x_i-x_{i-1}]$$
+        </p>
+        <p>Se define la <b>suma superior de Riemann de $f$, con respecto a la partición $P$</b> como:
+          $$\underline{S}(f,P) :=\sum_{i=1}^n M_i [x_i-x_{i-1}]$$
+            
+          
         </p>
       </div>
 
