@@ -157,7 +157,7 @@
       </p>
      
       <p>Veamos un ejemplo siguiendo las ideas de Arquímides: <b>Calcular el area comprendida 
-        entre la gráfica de la función $f(x)=x^{2}$ y el eje. $x$ desde $x=0$ hasta $x=b$</b>, donde $b>0$
+        entre la gráfica de la función $f(x)=x^{2}$ y el eje $x$ desde $x=0$ hasta $x=b$</b>, donde $b>0$
         es un número arbitrario pero fijo.
       </p>
       <div class="flexbox">
@@ -172,8 +172,7 @@
       <div class="flexbox">
         <img src="./Imagenes/g4.png" alt="AreaBajoParabola" width="60%" height="auto">
         </div>
-      <p>
-          Intuitivamente si dividimos la región en un número muy grande de <em>franjas</em> la aproximación 
+      <p>Intuitivamente si dividimos la región en un número muy grande de <em>franjas</em> la aproximación 
           del área de los rectángulos será cada vez una mejor estimación del área bajo 
           la parábola  y en el límite obtendremos precisamente el área buscada. En lo que 
           sigue hacemos las cuentas que formalizan esta idea. 
@@ -181,25 +180,24 @@
       <div class="flexbox">
         <img src="./Imagenes/g7.png" alt="AreaBajoParabola" width="60%" height="auto">
         </div>
-        <p>Comencemos dividiendo el invervalo $[0,b]$ en un subintervalos de igual longitud. Para 
-          mantener un control de la cantidad de subintervalos vamos a usar un entero positivo $n$:
+        <p>Sea $n\in \mathbb{N}$, dividamos el invervalo $[0,b]$ en $n$ 
+          subintervalos de igual longitud: 
         </p>
-        <p>Por ejemplo, si $n=2$  dividimos $[a,b]$ en dos subintervalos iguales y además vamos a enumerar los 
-          extremos de estos subintervalos iniciando con $x_0=0$, luego el punto medio 
-          $\displaystyle{x_1=\frac{b}{2}}$ y el punto final $x_2=b$.
-          
-        </p>
-        
-        
-        <p>En general, si dividimos el intervalo $[0,b]$ en $n$ subintervalos de igual longitud los
-          puntos de la <em>partición</em> del intervalo $[a,b]$, iniciando con $x_0=0$  y 
-          terminando con $x_n=b$ son: 
-        </p>
-       
+        <p>
+          <ul>
+            <li>Por ejemplo, si $n=2$  entonces el intervalo $[a,b]$ es dividido en dos subintervalos iguales
+            y se etiquetan a los extremos de estos subintervalos como: $x_0:=0$, $\displaystyle{x_1:=\frac{b}{2}}$
+            y $x_2:=b$.
+            </li>
+            <li>En general, si dividimos el intervalo $[0,b]$ en $n$ subintervalos de igual longitud los
+            se etiquetan los extremos de estos subintervalos como:
+            </li>
+          </ul>
+       </p>
         
         <p>
           $$
-          x_0=0,x_1= \frac{b}{n}, x_2=2\frac{b}{n}, \dots, x_{n-1}=(n-1)\frac{b}{n}, x_n=n\frac{b}{n}=b.
+          x_0 :=0,x_1 := \frac{b}{n}, x_2:=2\frac{b}{n}, \dots, x_{n-1}:=(n-1)\frac{b}{n}, x_n:=n\frac{b}{n}=b.
           $$
         </p>
 
