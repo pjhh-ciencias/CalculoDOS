@@ -402,7 +402,7 @@ h1.number-title::before{
 
 h2.number-title{
   margin-top: 0%;
-  margin-bottom: -0.25%;
+  margin-bottom: 0%;
   padding: 0.25%;
   font-size: 175%;
   font-family: 'Hina Mincho', serif;
