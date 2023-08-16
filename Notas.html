@@ -100,19 +100,21 @@
       <body class="fondo-body" ><h1 class="page-title"> Sumas superiores y sumas inferiores de Riemann</h1>  
 
 
-      <h1 class="page-subtitle">La noción de area</h1> 
+      <!-- <h1 class="page-subtitle"></h1>  -->
 
-      <div class="nota-box"><h1 class="number-title"> Motivación</h1>  
+      <div class="nota-box"><h1 class="number-title"> La noción de área</h1>  
         <p>Una de las motivaciones más importantes para el desarrollo 
           del <b>Cálculo Integral</b> es el concepto de <em><b>área</b></em>. En
-           particular, calcular <b><em> áreas debajo de gráficas de funciones</em></b>. 
+           particular, calcular el <b><em> área entre la gráfica de una función, 
+            el eje $x$ en un intervalo determinado.
+           </em></b>. 
         </p>
 
         <p>La noción de área no la vamos a definir formalmente pues aunque se trata de un  proceso interesante 
-          es a la vez extenso. En su lugar, pensemos al área simplemente como una función denotada por $A$
+          es extenso. Pensemos en el área simplemente como una función denotada por $A$
           que asigna números no negativos a ciertas regiones del plano, las cuales llamaremos
-          <b><em>medibles</em></b> y que además para cualesquiera $R$ y $T$  medibles
-          se satisfacen las siguientes propiedades:
+          <b><em>medibles</em></b> y que satisface las siguientes propiedades para $R$ y $T$ 
+          medibles:
       </p>
       <ol>
           <li>$A(R) \geq 0$ para todo medible $R$,</li> 
@@ -123,12 +125,12 @@
             <!-- si además $A(R)< \infty$, se satisface que  $A(R\setminus T)= A(R)-A(T)$,</li> -->
           <li>Si $R$ es un rectángulo de base $b$ y altura $h$, entonces $A(R)=b\cdot h$;</li>
           <li>Se dice que dos conjuntos medibles $R$ y $T$, son <b><em>congruentes</em></b> 
-            si existen <em>rotaciones</em> y/o <em>traslaciones</em> que manden uno al otro.
+            si existen <em>rotaciones</em> y/o <em>traslaciones</em> que lleven uno al otro.
             Bajo esta definición si $R$ y $T$ son congruentes entonces se debe cumplir que $A(R)=A(T)$,
           </li>
           <li>Existe una propiedad adicional que tiene que ver con límites (pero que 
           no es fundamental entender en este momento):
-          Si $\left(R_i\right)_{i=1}^{\infty}$ es una sucesión de conjuntos medibles ajenos dos 
+          Si $R_1,R_2, R_3, \ldots$ es una sucesión de conjuntos medibles ajenos dos 
           a dos, entonces 
               $$
               A\left(\displaystyle{\bigcup_{i=1}^\infty R_i}\right)=\displaystyle{\sum_{i=1}^\infty A(R_i)}
@@ -138,10 +140,10 @@
       </div>
 
 
-      <h1 class="page-subtitle"> El ejemplo de Arquimides</h1>
+      <h1 class="page-subtitle"> El ejemplo de Arquímides</h1>
 
 
-      <div class="nota-box"><h1 class="number-title"> Introducción</h1>
+      <div class="nota-box"><h1 class="number-title"> Motivación</h1>
         <p>Arquímides entre otros muchos temas, estaba interesado en calcular áreas y volumenes.
           Antes de cálcular áreas, Arquimides ya hábia calculado varios volúmenes:
           <ul>
@@ -293,17 +295,15 @@
           <div class="nota-box"><h1 class="number-title"> Definición</h1>
               <!-- <li><p>Sea $[a,b] \subseteq \mathbb{R}$ un intervalo, se define su <b>longitud</b> como: $b-a$.
               </p></li> -->
-              <p>Una <b>partición</b> del intervalo $[a,b]$ es un subconjunto finito de puntos 
-                $P \subset [a,b]$ tal que $a, b \in P$. 
+              <p>Una partición de $[a,b]$ es un subconjunto  finito de puntos
+                $P=\{ x_0, x_1, \ldots,  x_n \}\subseteq [a,b]$ tal que $x_{0} =a, x_{n} = b$ y 
+                $x_{i} < x_{i+1}$ para cada $i=0,1,\ldots,n$. 
               </p>
-          </div>
-            <div class="nota-box"><h1 class="number-title"> Notación</h1>
-            <p>Si $P=\{ x_0, x_1, \ldots,  x_n \}$ es una partición $P$ de $[a,b]$ frecuentemente se asume que 
-              $$x_0 =a < x_1 < \cdots < x_n =b.$$ 
-              Y a los intervalos de la forma $[x_{i-1}, x_i]$ para cada 
-              $i=1,\dots, n$, se les llama <b>subintervalos de la partición</b>. El número  $n$ es llamado la
-                <b>longitud de la partición</b> y determina en cuántas partes dicha partición  divide el intervalo 
-                \([a,b]\).
+              <p>
+                <!-- Los intervalos de la forma $[x_{i-1}, x_i]$ para cada 
+              $i=1,\dots, n$, se les llama <b>subintervalos de la partición</b>. -->
+              El número  $n$ es llamado la <b>longitud de la partición</b> y determina en 
+              cuántas partes dicha partición divide el intervalo \([a,b]\).
             </p>
               <p>
               Observemos que la partición más sencilla es simplemente $P=\{a,b\}$.
